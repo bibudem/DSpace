@@ -1,0 +1,29 @@
+## Workflow task email message
+##
+## {0}  Title of submission
+## {1}  Name of collection
+## {2}  submitter's name
+## {3}  Description of task
+## {4}  link to 'my DSpace' page
+##
+#set($subject = '[papyrus.bib.umontreal.ca] - Nouvelle tâche')
+Bonjour !
+
+Un document vient d'être soumis dans Papyrus :
+
+  ·  Titre/Ref. bib.:   ${params[0]}
+  ·  Collection:   			${params[1]}
+  ·  Soumis par:   			${params[2]}
+
+${params[3]}
+
+Pour accepter cette tâche, accéder à votre page « Mon compte > Afficher > Tâches du Workflow » :
+
+${params[4]}
+
+Merci de votre contribution.
+
+Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus

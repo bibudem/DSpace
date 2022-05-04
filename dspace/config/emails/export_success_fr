@@ -1,0 +1,18 @@
+## Email sent to DSpace users when they successfully export an item or collection.
+##
+## Parameters: {0} is expanded to a special URL
+##             {1} configurable time (hours) an export file will be kept
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "[papyrus.bib.umontreal.ca] - Le fichier d'exportation des documents demandés est prêt à être téléchargé")
+Le fichier d'exportation des documents demandés est maintenant prêt pour le téléchargement
+
+Vous pouvez télécharger le fichier compressé en suivant ce lien :
+${params[0]}
+
+Ce fichier demeurera disponible pour une période d'au moins ${params[1]} heure(s).
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus
+

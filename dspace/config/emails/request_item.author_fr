@@ -1,0 +1,42 @@
+#set($subject = '[papyrus.bib.umontreal.ca] - Demande de copie d'un document / Request copy of document')
+
+[English message below]
+
+Bonjour ${params[7]},
+
+Un.e usager.ère de ${params[9]}, nommé.e ${params[0]} et utilisant l'adresse courriel ${params[1]} a demandé une copie du ou des fichier(s) associé(s) au document suivant : « ${params[4]} » (${params[3]}). Ce document que vous avez déposé dans ${params[9]} est sous embargo à votre demande ou en raison de la politique de l'éditeur du document.
+
+Le message suivant accompagnait la requête:
+
+« ${params[5]} »
+
+Cliquez sur le lien ${params[6] pour accéder à ${params[9]} qui vous permettra d'envoyer une réponse posit ive (avec fichier joint) ou négative à cette requête. 
+
+SI VOUS N'ÊTES PAS UN.E AUTEUR.E DE CE DOCUMENT, vous devez rediriger ce message à l'auteur.e ou aux auteur.e.s qui seul.e.s peuvent autoriser l'envoi d'une copie du document.
+
+Pour toute question concernant cette requête, n'hésitez pas à communiquer avec nous à ${params[10]}.
+
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus
+
+----------------------------------
+
+Hi ${params[7]},
+
+A user of ${params[9]}, named ${params[0]} and using the email ${params[1]}, requested a copy of the file(s) associated with the following document: "${params[4]}" (${params[3]}). This document you submitted in ${params[9]} is under embargo to your request or because of the editor's policy.
+
+This request came along with the following message:
+
+"${params[5]}"
+
+To answer, click ${params[6]} to access ${params[9]}. You will be offered to grant (with file(s) attachment) or deny the request.
+
+IF YOU ARE NOT AN AUTHOR OF THIS DOCUMENT, you must redirect this message to the author (or the authors) whom are the only one(s) who can grant the request to send a copy.
+
+If you have any questions concerning this request, please contact ${params[10]}.
+
+
+The Papyrus Team
+www.bib.umontreal.ca/Papyrus
+

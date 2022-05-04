@@ -1,0 +1,17 @@
+## E-mail sent to DSpace users when they register for an account
+##
+## Parameters: {0} is expanded to a special registration URL
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "[papyrus.bib.umontreal.ca] - Inscription")
+Pour compléter votre inscription au dépôt institutionnel Papyrus, veuillez accéder
+au lien ci-dessous :
+
+  ${params[0]}
+
+Pour toute question concernant le dépôt, n'hésitez pas à communiquer
+avec nous à depot@bib.umontreal.ca
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus

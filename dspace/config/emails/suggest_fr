@@ -1,0 +1,38 @@
+## E-mail sent with the information filled out in a suggest form.
+##
+## Parameters: {0} recipient name
+##             {1} sender name
+##             {2} repository name
+##             {3} item title
+##             {4} item handle URI
+##             {5} item local URL - may be used in lieu of {4} if not using handle server
+##             {6} collection name
+##             {7} sender message
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = '[papyrus.bib.umontreal.ca] - Un document susceptible de vous intéresser')
+
+Bonjour ${params[0]},
+
+${params[1]} a demandé à ce que vous parvienne ce courriel au sujet d'un document
+disponible dans ${params[2]}.
+
+Titre : ${params[3]}
+URL : ${params[5]}
+Dans la collection : ${params[6]}
+
+Message personnel :
+
+{7}
+
+
+-------------------------------------------------------------------------
+Le dépôt institutionnel Papyrus conserve et diffuse différentes
+formes de travaux de recherche et d'enseignement (pré-publications, articles,
+rapports techniques, présentations, thèses, etc.)
+produites par la communauté de l'Université de Montréal.
+
+Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus
