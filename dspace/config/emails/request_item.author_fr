@@ -1,4 +1,5 @@
-#set($subject = '[papyrus.bib.umontreal.ca] - Demande de copie d'un document / Request copy of document')
+## MHV mai 2022 : important: escaper l'apostrophe dans l'objet du courriel
+#set($subject = '[papyrus.bib.umontreal.ca] - Demande de copie d''un document/ Request copy of document')
 
 [English message below]
 
@@ -10,7 +11,7 @@ Le message suivant accompagnait la requête:
 
 « ${params[5]} »
 
-Cliquez sur le lien ${params[6] pour accéder à ${params[9]} qui vous permettra d'envoyer une réponse posit ive (avec fichier joint) ou négative à cette requête. 
+Cliquez sur le lien ${params[6]} pour accéder à ${params[9]} qui vous permettra d'envoyer une réponse positive (avec fichier joint) ou négative à cette requête. 
 
 SI VOUS N'ÊTES PAS UN.E AUTEUR.E DE CE DOCUMENT, vous devez rediriger ce message à l'auteur.e ou aux auteur.e.s qui seul.e.s peuvent autoriser l'envoi d'une copie du document.
 
