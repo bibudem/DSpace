@@ -80,7 +80,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Embargo souhaité jusqu'au :</label>
                <input-type value-pairs-name="test_embargo">dropdown</input-type>
-               <hint>EmbargoTerms</hint>
+               <hint>TestEmbargoTerms</hint>
                <required/>
             </field>
          </row>
