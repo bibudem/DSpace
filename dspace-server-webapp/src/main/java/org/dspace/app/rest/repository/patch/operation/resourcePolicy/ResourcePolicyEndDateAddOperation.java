@@ -43,7 +43,8 @@ public class ResourcePolicyEndDateAddOperation<R> extends PatchOperation<R> {
         checkOperationValue(operation.getValue());
         if (this.supports(resource, operation)) {
             ResourcePolicy resourcePolicy = (ResourcePolicy) resource;
-            resourcePolicyUtils.checkResourcePolicyForExistingEndDateValue(resourcePolicy, operation);
+            // UdeM 2022 correction du bug  #8180 | https://github.com/DSpace/DSpace/pull/8180/files/6790ee157e03bb035c6a5affce763780505a4ec0
+            // resourcePolicyUtils.checkResourcePolicyForExistingEndDateValue(resourcePolicy, operation);
             resourcePolicyUtils.checkResourcePolicyForConsistentEndDateValue(resourcePolicy, operation);
             this.add(resourcePolicy, operation);
             return resource;
