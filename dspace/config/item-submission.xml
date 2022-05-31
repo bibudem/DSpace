@@ -306,6 +306,13 @@ license in order to complete the deposit.  This repository distribution license 
             <scope visibilityOutside="read-only">submission</scope>
         </step-definition>
 
+        <!-- This optional step may allow the user to select access conditions on the item -->
+        <!--<step-definition id="itemAccessConditions">
+            <heading>submit.progressbar.accessCondition</heading>
+            <processing-class>org.dspace.app.rest.submit.step.AccessConditionStep</processing-class>
+            <type>accessCondition</type>
+        </step-definition>-->
+
     </step-definitions>
 
     <!-- The submission-definitions map lays out the detailed definition of -->
