@@ -64,10 +64,10 @@ jobs:
           restore-keys: ${{ runner.os }}-maven-
 
       # Run parallel Maven builds based on the above 'strategy.matrix'
-      - name: Run Maven ${{ matrix.type }}
-        env:
-          TEST_FLAGS: ${{ matrix.mvnflags }}
-        run: mvn install -B -V -P-assembly -Pcoverage-report $TEST_FLAGS
+      #- name: Run Maven ${{ matrix.type }}
+      # env:
+      #   TEST_FLAGS: ${{ matrix.mvnflags }}
+      # run: mvn install -B -V -P-assembly -Pcoverage-report $TEST_FLAGS
 
       # If previous step failed, save results of tests to downloadable artifact for this job
       # (This artifact is downloadable at the bottom of any job's summary page)
