@@ -1352,7 +1352,6 @@ public class ResourcePolicyRestRepositoryIT extends AbstractControllerIntegratio
                 hasJsonPath("$.action", is(Constants.actionText[resourcePolicy.getAction()])),
                 hasJsonPath("$.startDate", is(formatDate.format(newDate))))));
     }
-    // UdeM 2022 correction du bug  #8180 | https://github.com/DSpace/DSpace/pull/8180/files/6790ee157e03bb035c6a5affce763780505a4ec0
 
     @Test
     public void patchRemoveStartDataTest() throws Exception {

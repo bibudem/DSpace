@@ -561,6 +561,14 @@ public class DCInput {
         return true;
     }
 
+     /**
+        * Get the type bind list for use in determining whether
+        * to display this field in angular dynamic form building
+        * @return list of bound types
+        */
+       public List<String> getTypeBindList() {
+           return typeBind;
+       }
     /**
      * Verify whether the current field contains an entity relationship
      * This also implies a relationship type is defined for this field
