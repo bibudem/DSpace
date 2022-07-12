@@ -101,7 +101,7 @@
 	<xsl:variable name="estUnFilmOuVidéo">
 		<xsl:for-each
 			select="$dc/doc:element[@name = 'type']/doc:element/doc:field[@name = 'value']">
-			<xsl:if test="contains(normalize-space(.), 'Film, vidéo')">
+			<xsl:if test="contains(normalize-space(.), 'Film ou vidéo')">
 				<xsl:value-of select="'true'"/>
 			</xsl:if>
 		</xsl:for-each>

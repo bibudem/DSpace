@@ -329,7 +329,7 @@ Par ex. ceci est le cas des theses des collections retrospectives -->
 													<dcterms:type rdf:resource="http://purl.org/coar/resource_type/c_18cw"/>
 												</xsl:when>
 												<xsl:when
-													test="contains(.,'Film, vidéo')">
+													test="contains(.,'Film ou vidéo')">
 													<dcterms:type rdf:resource="http://purl.org/coar/resource_type/c_12ce"/>
 												</xsl:when>
 												<xsl:when
