@@ -47,142 +47,123 @@
 
 
 
+<name-map collection-handle="1973/2964" submission-name="TME"/>
+        <name-map collection-handle="1973/2621" submission-name="TME"/>
+        <name-map collection-handle="1973/9604" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1973/4153" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1973/578" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1973/3512" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1973/10321" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1973/20059" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1973/577" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1973/19699" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1973/19192" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1973/19210" submission-name="TravauxetPublications"/>
 
-        <!-- Default submission process -->
-        <name-map collection-handle="default" submission-name="TravauxetPublications"/>
-
-      <!-- version test -->
-<name-map collection-handle="1973/2964" submission-name="TME" />    <!-- École d'optométrie – Thèses et mémoires (id: 102) -->
-<name-map collection-handle="1973/2621" submission-name="TME" />    <!-- Thèses et mémoires électroniques de l’Université de Montréal (id: 79) -->
-
-<name-map collection-handle="1973/9604" submission-name="ProductionEtudiante" />    <!-- Fac. Méd. - Département de pharmacologie et physiologie/Institut de génie biomédical - Production étudiante (id: 161) -->
-<name-map collection-handle="1973/4153" submission-name="ProductionEtudiante" />    <!-- Fac. Méd. - École de réadaptation - Production étudiante (id: 151) -->
-<name-map collection-handle="1973/578" submission-name="ProductionEtudiante" />    <!-- *******************Fac. Sc. infirmières - Production étudiante (id: 22) -->
-<name-map collection-handle="1973/3512" submission-name="ProductionEtudiante" />    <!-- FAS - École de psychoéducation - Production étudiante (id: 144) -->
-
-<name-map collection-handle="1973/10321" submission-name="TravauxetPublications" />    <!-- École de santé publique - Travaux et publications (id: 166) -->
-<name-map collection-handle="1973/20059" submission-name="TravauxetPublications" />    <!-- École d'été doctorale et postdoctorale - Travaux et publications (id: 221) -->
-<name-map collection-handle="1973/577" submission-name="TravauxetPublications" />    <!-- ************* Fac. Sc. infirmières - Travaux et publications (id: 21) -->
-<name-map collection-handle="1973/19699" submission-name="TravauxetPublications" />    <!-- Faculté de médecine - Travaux et publications (id: 219) -->
-<name-map collection-handle="1973/19192" submission-name="TravauxetPublications" />    <!-- FAS - Dép. Chimie - Travaux et publications (id: 200) -->
-<name-map collection-handle="1973/19210" submission-name="TravauxetPublications" />    <!-- FAS - École de psychoéducation - Travaux et publications (id: 211) -->
-
-<name-map collection-handle="1973/20070" submission-name="test" />    <!-- test MHV (id: 222) -->
-
-
-      <!-- version live -->
-
-<!-- T&P -->
-<name-map collection-handle="1866/10" submission-name="TravauxetPublications" />    <!-- Direction des bibliothèques – Production du personnel (id: 5) -->
-<name-map collection-handle="1866/8" submission-name="TravauxetPublications" />    <!-- Direction des bibliothèques – Publications (id: 4) -->
-<name-map collection-handle="1866/167" submission-name="TravauxetPublications" />    <!-- Div. Gestion de documents et des archives – Publications et communications (id: 12) -->
-<name-map collection-handle="1866/10321" submission-name="TravauxetPublications" />    <!-- École de santé publique – Travaux et publications (id: 166) -->
-<name-map collection-handle="1866/19186" submission-name="TravauxetPublications" />    <!-- École d'optométrie – Travaux et publications (id: 195) -->
-<name-map collection-handle="1866/16334" submission-name="TravauxetPublications" />    <!-- Faculté de droit – Travaux et publications (id: 192) -->
-<name-map collection-handle="1866/12629" submission-name="TravauxetPublications" />    <!-- Faculté de l'aménagement – Travaux et publications (id: 182) -->
-<name-map collection-handle="1866/19679" submission-name="TravauxetPublications" />    <!-- Faculté de l'éducation permanente – Travaux et publications (id: 218) -->
-<name-map collection-handle="1866/14148" submission-name="TravauxetPublications" />    <!-- Faculté de médecine dentaire – Travaux et publications (id: 190) -->
-<name-map collection-handle="1866/19699" submission-name="TravauxetPublications" />    <!-- Faculté de médecine – Travaux et publications (id: 219) -->
-<name-map collection-handle="1866/19187" submission-name="TravauxetPublications" />    <!-- Faculté de médecine vétérinaire – Travaux et publications (id: 196) -->
-<name-map collection-handle="1866/19188" submission-name="TravauxetPublications" />    <!-- Faculté de musique – Travaux et publications (id: 197) -->
-<name-map collection-handle="1866/19189" submission-name="TravauxetPublications" />    <!-- Faculté de pharmacie – Travaux et publications (id: 198) -->
-<name-map collection-handle="1866/19191" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département d'anthropologie – Travaux et publications (id: 199) -->
-<name-map collection-handle="1866/19192" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de chimie – Travaux et publications (id: 200) -->
-<name-map collection-handle="1866/19193" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de communication – Travaux et publications (id: 201) -->
-<name-map collection-handle="1866/19194" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de démographie – Travaux et publications (id: 202) -->
-<name-map collection-handle="1866/19195" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de géographie - Travaux et publications (id: 203) -->
-<name-map collection-handle="1866/19196" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de linguistique et de traduction - Travaux et publications (id: 204) -->
-<name-map collection-handle="1866/13063" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de littératures et de langues du monde - Travaux et publications (id: 186) -->
-<name-map collection-handle="1866/19200" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de mathématiques et de statistique – Travaux et publications (id: 205) -->
-<name-map collection-handle="1866/19201" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de philosophie - Travaux et publications (id: 206) -->
-<name-map collection-handle="1866/2331" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de physique - Travaux et publications (id: 73) -->
-<name-map collection-handle="1866/19203" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de psychologie - Travaux et publications (id: 207) -->
-<name-map collection-handle="1866/12201" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de science politique - Travaux et publications (id: 178) -->
-<name-map collection-handle="1866/19204" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de sciences biologiques - Travaux et publications (id: 208) -->
-<name-map collection-handle="1866/19239" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de sciences économiques - Travaux et publications (id: 214) -->
-<name-map collection-handle="1866/11371" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département des littératures de langue française - Travaux et publications (id: 172) -->
-<name-map collection-handle="1866/1979" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département de sociologie - Travaux et publications (id: 60) -->
-<name-map collection-handle="1866/11307" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques - Travaux et publications (id: 170) -->
-<name-map collection-handle="1866/11306" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département d'histoire - Travaux et publications (id: 169) -->
-<name-map collection-handle="1866/19207" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Département d'insubmissionatique et de recherche opérationnelle - Travaux et publications (id: 209) -->
-<name-map collection-handle="1866/561" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'insubmissionation - Travaux et publications (id: 15) -->
-<name-map collection-handle="1866/19209" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – École de criminologie - Travaux et publications (id: 210) -->
-<name-map collection-handle="1866/19210" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – École de psychoéducation – Travaux et publications (id: 211) -->
-<name-map collection-handle="1866/1521" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – École de relations industrielles – Travaux et publications (id: 58) -->
-<name-map collection-handle="1866/19211" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – École de travail social – Travaux et publications (id: 212) -->
-<name-map collection-handle="1866/695" submission-name="TravauxetPublications" />    <!-- Faculté des arts et des sciences – Institut d'études religieuses – Travaux et publications (id: 25) -->
-<name-map collection-handle="1866/4671" submission-name="TravauxetPublications" />    <!-- Faculté des sciences de l'éducation – Travaux et publications (id: 152) -->
-<name-map collection-handle="1866/577" submission-name="TravauxetPublications" />    <!-- Faculté des sciences infirmières – Travaux et publications (id: 21) -->
-<name-map collection-handle="1866/5402" submission-name="TravauxetPublications" />    <!-- Réseau des diplômés et des donateurs – Les diplômés (id: 154) -->
-<name-map collection-handle="1866/10093" submission-name="TravauxetPublications" />    <!-- Réseau des diplômés et des donateurs – Patrimoine (id: 162) -->
-<name-map collection-handle="1866/25825" submission-name="TravauxetPublications" />    <!-- Événements, expositions, collaborations (id: 228) -->
+        <name-map collection-handle="1973/20070" submission-name="test"/>
 
 
 
-<!-- TME -->
-<name-map collection-handle="1866/10094" submission-name="TME" />    <!-- École de santé publique – Thèses et mémoires (id: 163) -->
-<name-map collection-handle="1866/2964" submission-name="TME" />    <!-- École d'optométrie – Thèses et mémoires (id: 102) -->
-<name-map collection-handle="1866/1319" submission-name="TME" />    <!-- Faculté de droit – Thèses et mémoires (id: 38) -->
-<name-map collection-handle="1866/2593" submission-name="TME" />    <!-- Faculté de l'aménagement – Thèses et mémoires (id: 77) -->
-<name-map collection-handle="1866/2965" submission-name="TME" />    <!-- Faculté de médecine dentaire – Thèses et mémoires (id: 103) -->
-<name-map collection-handle="1866/2591" submission-name="TME" />    <!-- Faculté de médecine – Thèses et mémoires (id: 76) -->
-<name-map collection-handle="1866/2966" submission-name="TME" />    <!-- Faculté de médecine vétérinaire – Thèses et mémoires (id: 104) -->
-<name-map collection-handle="1866/2968" submission-name="TME" />    <!-- Faculté de musique – Thèses et mémoires (id: 105) -->
-<name-map collection-handle="1866/2969" submission-name="TME" />    <!-- Faculté de pharmacie – Thèses et mémoires (id: 106) -->
-<name-map collection-handle="1866/2974" submission-name="TME" />    <!-- Faculté des arts et des sciences – Centre d'études classiques – Thèses et mémoires (id: 110) -->
-<name-map collection-handle="1866/2976" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département d'anthropologie – Thèses et mémoires (id: 111) -->
-<name-map collection-handle="1866/2977" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de chimie – Thèses et mémoires (id: 112) -->
-<name-map collection-handle="1866/2981" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de communication – Thèses et mémoires (id: 113) -->
-<name-map collection-handle="1866/2982" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de démographie – Thèses et mémoires (id: 114) -->
-<name-map collection-handle="1866/2984" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de géographie - Thèses et mémoires (id: 115) -->
-<name-map collection-handle="1866/2985" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de linguistique et de traduction - Thèses et mémoires (id: 116) -->
-<name-map collection-handle="1866/11852" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de littératures et de langues du monde - Thèses et mémoires (id: 177) -->
-<name-map collection-handle="1866/2988" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires (id: 119) -->
-<name-map collection-handle="1866/2989" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de philosophie - Thèses et mémoires (id: 120) -->
-<name-map collection-handle="1866/2990" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de physique - Thèses et mémoires (id: 121) -->
-<name-map collection-handle="1866/2991" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de psychologie - Thèses et mémoires (id: 122) -->
-<name-map collection-handle="1866/2993" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de science politique - Thèses et mémoires (id: 124) -->
-<name-map collection-handle="1866/2994" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires (id: 125) -->
-<name-map collection-handle="1866/2995" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires (id: 126) -->
-<name-map collection-handle="1866/2996" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département des littératures de langue française - Thèses et mémoires (id: 127) -->
-<name-map collection-handle="1866/2997" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département de sociologie - Thèses et mémoires (id: 128) -->
-<name-map collection-handle="1866/3000" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques - Thèses et mémoires (id: 131) -->
-<name-map collection-handle="1866/2999" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département d'histoire - Thèses et mémoires (id: 130) -->
-<name-map collection-handle="1866/3001" submission-name="TME" />    <!-- Faculté des arts et des sciences – Département d'insubmissionatique et de recherche opérationnelle - Thèses et mémoires (id: 132) -->
-<name-map collection-handle="1866/3006" submission-name="TME" />    <!-- Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'insubmissionation - Thèses et mémoires (id: 137) -->
-<name-map collection-handle="1866/3002" submission-name="TME" />    <!-- Faculté des arts et des sciences – École de criminologie - Thèses et mémoires (id: 133) -->
-<name-map collection-handle="1866/3003" submission-name="TME" />    <!-- Faculté des arts et des sciences – École de psychoéducation - Thèses et mémoires (id: 134) -->
-<name-map collection-handle="1866/3004" submission-name="TME" />    <!-- Faculté des arts et des sciences – École de relations industrielles – Thèses et mémoires (id: 135) -->
-<name-map collection-handle="1866/3005" submission-name="TME" />    <!-- Faculté des arts et des sciences – École de travail social – Thèses et mémoires (id: 136) -->
-<name-map collection-handle="1866/2973" submission-name="TME" />    <!-- Faculté des arts et des sciences – Institut d'études religieuses – Thèses et mémoires (id: 109) -->
-<name-map collection-handle="1866/3011" submission-name="TME" />    <!-- Faculté des arts et des sciences – Interdisciplinaire – Thèses et mémoires (id: 138) -->
-<name-map collection-handle="1866/2971" submission-name="TME" />    <!-- Faculté des sciences de l'éducation – Thèses et mémoires (id: 107) -->
-<name-map collection-handle="1866/2972" submission-name="TME" />    <!-- Faculté des sciences infirmières – Thèses et mémoires (id: 108) -->
-<name-map collection-handle="1866/2621" submission-name="TME" />    <!-- Thèses et mémoires électroniques de l’Université de Montréal (id: 79) -->
-
-
-<!-- ProductionEtudiante -->
-<name-map collection-handle="1866/16409" submission-name="ProductionEtudiante" />    <!-- École de santé publique – Production étudiante (id: 193) -->
-<name-map collection-handle="1866/3536" submission-name="ProductionEtudiante" />    <!-- Faculté de l'aménagement – Production étudiante (id: 145) -->
-<name-map collection-handle="1866/20320" submission-name="ProductionEtudiante" />    <!-- Faculté de médecine – Département de nutrition – Production étudiante (id: 220) -->
-<name-map collection-handle="1866/9604" submission-name="ProductionEtudiante" />    <!-- Faculté de médecine – Département de pharmacologie et physiologie/Institut de génie biomédical – Production étudiante (id: 161) -->
-<name-map collection-handle="1866/4153" submission-name="ProductionEtudiante" />    <!-- Faculté de médecine – École de réadaptation – Production étudiante (id: 151) -->
-<name-map collection-handle="1866/10315" submission-name="ProductionEtudiante" />    <!-- Faculté de pharmacie – Production étudiante (id: 164) -->
-<name-map collection-handle="1866/10469" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – Département de psychologie - Production étudiante (id: 168) -->
-<name-map collection-handle="1866/153" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – Département de sciences économiques - Production étudiante (id: 9) -->
-<name-map collection-handle="1866/11370" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – Département des littératures de langue française - Production étudiante (id: 171) -->
-<name-map collection-handle="1866/20889" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – Département d'histoire - Production étudiante (id: 225) -->
-<name-map collection-handle="1866/567" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information - Production étudiante (id: 19) -->
-<name-map collection-handle="1866/3200" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – École de criminologie - Production étudiante (id: 142) -->
-<name-map collection-handle="1866/3512" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – École de psychoéducation - Production étudiante (id: 144) -->
-<name-map collection-handle="1866/23100" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – École de relations industrielles – Production étudiante (id: 226) -->
-<name-map collection-handle="1866/3742" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – École de travail social – Production étudiante (id: 149) -->
-<name-map collection-handle="1866/20839" submission-name="ProductionEtudiante" />    <!-- Faculté des sciences de l'éducation – Production étudiante (id: 221) -->
-<name-map collection-handle="1866/578" submissionm-name="ProductionEtudiante" />    <!-- Faculté des sciences infirmières – Production étudiante (id: 22) -->
-<name-map collection-handle="1866/25735" submission-name="ProductionEtudiante" />    <!-- Faculté de médecine – Bureau de l’éthique clinique – Production étudiante (id: 227) -->
-<!-- MHV Juillet 2022 Synchronisation manuelle avec instance Dspace 5.x : -->
-<name-map collection-handle="1866/26712" submission-name="ProductionEtudiante" />    <!-- Faculté des arts et des sciences – Interdisciplinaire – Production étudiante (id: 229) -->
-
+        <name-map collection-handle="1866/10" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/8" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/167" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/10321" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19186" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/16334" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/12629" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19679" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/14148" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19699" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19187" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19188" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19189" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19191" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19192" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19193" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19194" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19195" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19196" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/13063" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19200" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19201" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/2331" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19203" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/12201" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19204" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19239" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/11371" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/1979" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/11307" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/11306" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19207" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/561" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19209" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19210" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/1521" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/19211" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/695" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/4671" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/577" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/5402" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/10093" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/25825" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="1866/10094" submission-name="TME"/>
+        <name-map collection-handle="1866/2964" submission-name="TME"/>
+        <name-map collection-handle="1866/1319" submission-name="TME"/>
+        <name-map collection-handle="1866/2593" submission-name="TME"/>
+        <name-map collection-handle="1866/2965" submission-name="TME"/>
+        <name-map collection-handle="1866/2591" submission-name="TME"/>
+        <name-map collection-handle="1866/2966" submission-name="TME"/>
+        <name-map collection-handle="1866/2968" submission-name="TME"/>
+        <name-map collection-handle="1866/2969" submission-name="TME"/>
+        <name-map collection-handle="1866/2974" submission-name="TME"/>
+        <name-map collection-handle="1866/2976" submission-name="TME"/>
+        <name-map collection-handle="1866/2977" submission-name="TME"/>
+        <name-map collection-handle="1866/2981" submission-name="TME"/>
+        <name-map collection-handle="1866/2982" submission-name="TME"/>
+        <name-map collection-handle="1866/2984" submission-name="TME"/>
+        <name-map collection-handle="1866/2985" submission-name="TME"/>
+        <name-map collection-handle="1866/11852" submission-name="TME"/>
+        <name-map collection-handle="1866/2988" submission-name="TME"/>
+        <name-map collection-handle="1866/2989" submission-name="TME"/>
+        <name-map collection-handle="1866/2990" submission-name="TME"/>
+        <name-map collection-handle="1866/2991" submission-name="TME"/>
+        <name-map collection-handle="1866/2993" submission-name="TME"/>
+        <name-map collection-handle="1866/2994" submission-name="TME"/>
+        <name-map collection-handle="1866/2995" submission-name="TME"/>
+        <name-map collection-handle="1866/2996" submission-name="TME"/>
+        <name-map collection-handle="1866/2997" submission-name="TME"/>
+        <name-map collection-handle="1866/3000" submission-name="TME"/>
+        <name-map collection-handle="1866/2999" submission-name="TME"/>
+        <name-map collection-handle="1866/3001" submission-name="TME"/>
+        <name-map collection-handle="1866/3006" submission-name="TME"/>
+        <name-map collection-handle="1866/3002" submission-name="TME"/>
+        <name-map collection-handle="1866/3003" submission-name="TME"/>
+        <name-map collection-handle="1866/3004" submission-name="TME"/>
+        <name-map collection-handle="1866/3005" submission-name="TME"/>
+        <name-map collection-handle="1866/2973" submission-name="TME"/>
+        <name-map collection-handle="1866/3011" submission-name="TME"/>
+        <name-map collection-handle="1866/2971" submission-name="TME"/>
+        <name-map collection-handle="1866/2972" submission-name="TME"/>
+        <name-map collection-handle="1866/2621" submission-name="TME"/>
+        <name-map collection-handle="1866/16409" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/3536" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/20320" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/9604" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/4153" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/10315" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/10469" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/153" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/11370" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/20889" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/567" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/3200" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/3512" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/23100" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/3742" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/20839" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/578" submission-name="ProductionEtudiante"/>
+        <name-map collection-handle="1866/25735" submission-name="ProductionEtudiante"/>
     </submission-map>
 
 
