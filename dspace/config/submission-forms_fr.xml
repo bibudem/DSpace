@@ -98,6 +98,19 @@ Aussi ma note antérieure disait:-->
             </field>
          </row>
          <row>
+             <field>
+               <dc-schema>dc</dc-schema>
+               <dc-element>contributor</dc-element>
+               <dc-qualifier>editor</dc-qualifier>
+               <repeatable>false</repeatable>
+               <label>Nom du contributor</label>
+               <type-bind>Carte géographique / Map, Actes de congrès / Conference proceedings</type-bind>
+               <input-type>textarea</input-type>
+               <hint>Enter le nom du contributor.</hint>
+               <required></required>
+             </field>
+         </row>
+         <row>
             <field>
                <dc-schema>dc</dc-schema>
                <dc-element>subject</dc-element>
@@ -165,7 +178,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Version</label>
                <type-bind>
-                  <!-- Groupe 1 : Article seulement. --> Article; </type-bind>
+                  <!-- Groupe 1 : Article seulement. --> Article </type-bind>
                <input-type value-pairs-name="versionTravauxetPublications">dropdown</input-type>
                <hint>Indiquez la version de l'article que vous vous apprêtez à déposer.</hint>
                <required>Vous devez préciser la version de l'article que vous vous apprêtez à
@@ -180,7 +193,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Référence au document</label>
                <type-bind>
-                  <!-- Groupe 1 livre seul. : --> Livre / Book; </type-bind>
+                  <!-- Groupe 1 livre seul. : --> Livre / Book </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.UdeM.ReferenceFournieParDeposant.G1.Livre</hint>
                <required>Vous devez inscrire la référence du document.</required>
@@ -194,8 +207,8 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Référence au document</label>
                <type-bind>
-                  <!-- Groupe 1  : --> Actes de congrès / Conference proceedings; Revue / Journal;
-                  Rapport / Report; </type-bind>
+                  <!-- Groupe 1  : --> Actes de congrès / Conference proceedings, Revue / Journal,
+                  Rapport / Report </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.UdeM.ReferenceFournieParDeposant.G1</hint>
                <required>Vous devez inscrire la référence du document.</required>
@@ -208,7 +221,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Référence au document</label>
-               <type-bind>Article; </type-bind>
+               <type-bind>Article </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.UdeM.ReferenceFournieParDeposant.G2.Article</hint>
                <required>Vous devez inscrire la référence de l'article.</required>
@@ -221,7 +234,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Référence au document</label>
-               <type-bind>Chapitre de livre / Book chapter; </type-bind>
+               <type-bind>Chapitre de livre / Book chapter </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.UdeM.ReferenceFournieParDeposant.G2.Chapitre</hint>
                <required>Vous devez inscrire la référence du chapitre de livre.</required>
@@ -235,8 +248,8 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe 1 partiel : --> Livre / Book; Rapport / Report;
-                  <!-- Groupe 2 complet : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 partiel : --> Livre / Book, Rapport / Report,
+                  <!-- Groupe 2 complet : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.title.G1-2</hint>
                <required/>
@@ -251,7 +264,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe 1 partiel : --> Actes de congrès / Conference proceedings; </type-bind>
+                  <!-- Groupe 1 partiel : --> Actes de congrès / Conference proceedings </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.title.ActesCongres</hint>
                <required/>
@@ -266,7 +279,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe 1 partiel : --> Revue / Journal; </type-bind>
+                  <!-- Groupe 1 partiel : --> Revue / Journal </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.title.Revue</hint>
                <required/>
@@ -281,11 +294,11 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <!-- Groupe 3 complet : -->
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.title.G3</hint>
                <required>Vous devez inscrire un titre principal pour le document soumis.</required>
@@ -299,9 +312,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Autre(s) titre(s)</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; <!-- Groupe 2 complet : --> Article;
-                  Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, <!-- Groupe 2 complet : --> Article,
+                  Chapitre de livre / Book chapter </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.alternative.G1-2</hint>
                <required/>
@@ -316,11 +329,11 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Autre(s) titre(s)</label>
                <!-- Groupe 3 complet : -->
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.alternative.G3</hint>
                <required/>
@@ -333,7 +346,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier>issn</dc-qualifier>
                <repeatable>true</repeatable>
                <label>ISSN</label>
-               <type-bind> Revue / Journal; Rapport / Report; </type-bind>
+               <type-bind> Revue / Journal, Rapport / Report </type-bind>
                <input-type>onebox</input-type>
                <hint>Entrez, si applicable, le(s) ISSN du document soumis.</hint>
                <required/>
@@ -349,8 +362,8 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s)</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report </type-bind>
                <input-type value-pairs-name="common_identifiersTravauxetPublicationsTous"
                   >qualdrop_value</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.identifier.G1-G2</hint>
@@ -367,7 +380,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s)</label>
                <type-bind>
-                  <!-- Groupe 2 complet : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2 complet : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type value-pairs-name="common_identifiersTravauxetPublicationsRestreint"
                   >qualdrop_value</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.identifier.partiel.restreint</hint>
@@ -383,10 +396,10 @@ Aussi ma note antérieure disait:-->
                <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                <repeatable>true</repeatable>
                <label>Identifiant(s)</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Matériel didactique / Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Matériel didactique / Educational material, Autre / Other </type-bind>
                <input-type value-pairs-name="common_identifiersTravauxetPublicationsTous"
                   >qualdrop_value</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.identifier.G3</hint>
@@ -401,7 +414,7 @@ Aussi ma note antérieure disait:-->
                <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                <repeatable>true</repeatable>
                <label>Identifiant(s)</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type value-pairs-name="common_identifiersTravauxetPublicationsRestreint"
                   >qualdrop_value</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.identifier.G3.restreint</hint>
@@ -416,9 +429,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Auteur(s)</label>
                <type-bind>
-                  <!-- Groupe 1 SAUF revue : --> Actes de congrès / Conference proceedings; Livre /
-                  Book; Rapport / Report; <!-- Groupe 2 complet : --> Article; Chapitre de livre /
-                  Book chapter; </type-bind>
+                  <!-- Groupe 1 SAUF revue : --> Actes de congrès / Conference proceedings, Livre /
+                  Book, Rapport / Report, <!-- Groupe 2 complet : --> Article, Chapitre de livre /
+                  Book chapter </type-bind>
                <input-type>name</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.contributor.author.G1-2</hint>
                <required/>
@@ -432,11 +445,11 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier>author</dc-qualifier>
                <repeatable>true</repeatable>
                <label>Auteur(s)</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other </type-bind>
                <input-type>name</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.contributor.author.G3</hint>
 
@@ -451,9 +464,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Contributeur(s)</label>
                <type-bind>
-                  <!-- QQs types seulement du groupe 1 et 2 : --> Revue / Journal; Livre / Book;
-                  Chapitre de livre / Book chapter; Actes de congrès / Conference proceedings;
-                  Rapport / Report; </type-bind>
+                  <!-- QQs types seulement du groupe 1 et 2 : --> Revue / Journal, Livre / Book,
+                  Chapitre de livre / Book chapter, Actes de congrès / Conference proceedings,
+                  Rapport / Report </type-bind>
                <input-type>name</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.contributor.G1-2</hint>
                <required/>
@@ -468,8 +481,8 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Contributeur(s)</label>
                <type-bind>
-                  <!-- Groupe 3 partiel : --> Contribution à un congrès / Conference object; Autre /
-                  Other; </type-bind>
+                  <!-- Groupe 3 partiel : --> Contribution à un congrès / Conference object, Autre /
+                  Other </type-bind>
                <input-type>name</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.contributor.G3</hint>
                <required/>
@@ -483,9 +496,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Éditeur</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; <!-- Groupe 2 complet : --> Article;
-                  Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, <!-- Groupe 2 complet : --> Article,
+                  Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.publisher.G1-2</hint>
                <required/>
@@ -499,9 +512,9 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>true</repeatable>
                <label>Éditeur</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Carte géographique / Map; Contribution à un
-                  congrès / Conference object; Matériel didactique / Educational material; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Carte géographique / Map, Contribution à un
+                  congrès / Conference object, Matériel didactique / Educational material </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.publisher.G3</hint>
                <required/>
@@ -515,9 +528,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Date du document</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; <!-- Groupe 2 complet : --> Chapitre de
-                  livre / Book chapter; Article; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, <!-- Groupe 2 complet : --> Chapitre de
+                  livre / Book chapter, Article </type-bind>
                <input-type>date</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.date.issued.G1-2</hint>
                <required/>
@@ -532,11 +545,11 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Date du document</label>
                <type-bind>
-                  <!-- Groupe 3 complet : --> Enregistrement musical / Musical recording; Partition
-                  / Musical notation; Film, vidéo / Motion picture, video; Ensemble de données /
-                  Dataset; Logiciel / Software; Carte géographique / Map; Présentation hors congrès
-                  / Non-conference presentation; Contribution à un congrès / Conference object;
-                  Matériel didactique / Educational material; Autre / Other;</type-bind>
+                  <!-- Groupe 3 complet : --> Enregistrement musical / Musical recording, Partition
+                  / Musical notation, Film ou vidéo / Motion picture or video, Ensemble de données /
+                  Dataset, Logiciel / Software, Carte géographique / Map, Présentation hors congrès
+                  / Non-conference presentation, Contribution à un congrès / Conference object,
+                  Matériel didactique / Educational material, Autre / Other,</type-bind>
                <input-type>date</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.date.issued.G3</hint>
                <required>Entrez la date du document.</required>
@@ -563,7 +576,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre du document parent (périodique ou livre)</label>
                <type-bind>
-                  <!-- Groupe 2 complet : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2 complet : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationTitle</hint>
                <required/>
@@ -578,7 +591,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Volume du périodique (ou du livre)</label>
                <type-bind>
-                  <!-- Groupe 2 : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2 : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationVolume</hint>
                <required/>
@@ -593,7 +606,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Numéro du périodique</label>
                <type-bind>
-                  <!-- Groupe 2 : --> Article; </type-bind>
+                  <!-- Groupe 2 : --> Article </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationIssue</hint>
                <required/>
@@ -608,7 +621,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Mention d'édition du document parent (livre)</label>
                <type-bind>
-                  <!-- Groupe 2  : --> Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2  : --> Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationEdition</hint>
                <required/>
@@ -623,7 +636,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Page de début</label>
                <type-bind>
-                  <!-- Groupe 2  : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2  : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationStartPage</hint>
                <required/>
@@ -638,7 +651,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Page de fin</label>
                <type-bind>
-                  <!-- Groupe 2  : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2  : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationEndPage</hint>
                <required/>
@@ -652,7 +665,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Titre du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationTitle.ContributionCongres</hint>
                <required/>
@@ -665,7 +678,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Numéro des actes</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationIssue.ContributionCongres</hint>
                <required/>
@@ -678,7 +691,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Lieu du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationConferencePlace</hint>
                <required/>
@@ -691,7 +704,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Dates du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationConferenceDate</hint>
                <required/>
@@ -704,7 +717,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Page de début</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationStartPage.contributionCongres</hint>
                <required/>
@@ -717,7 +730,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Page de fin</label>
-               <type-bind>Contribution à un congrès / Conference object;</type-bind>
+               <type-bind>Contribution à un congrès / Conference object,</type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationEndPage.contributionCongres</hint>
                <required/>
@@ -731,7 +744,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s) du document parent</label>
                <type-bind>
-                  <!-- Groupe 2 complet : --> Article; Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 2 complet : --> Article, Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.isPartOf.G2</hint>
                <required/>
@@ -746,11 +759,11 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s) du document parent</label>
                <type-bind>
-                  <!-- Groupe 3 complet : --> Enregistrement musical / Musical recording; Partition
-                  / Musical notation; Film, vidéo / Motion picture, video; Ensemble de données /
-                  Dataset; Logiciel / Software; Carte géographique / Map; Présentation hors congrès
-                  / Non-conference presentation; Contribution à un congrès / Conference object;
-                  Matériel didactique / Educational material; Autre / Other;</type-bind>
+                  <!-- Groupe 3 complet : --> Enregistrement musical / Musical recording, Partition
+                  / Musical notation, Film ou vidéo / Motion picture or video, Ensemble de données /
+                  Dataset, Logiciel / Software, Carte géographique / Map, Présentation hors congrès
+                  / Non-conference presentation, Contribution à un congrès / Conference object,
+                  Matériel didactique / Educational material, Autre / Other,</type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.isPartOf.G3</hint>
                <required/>
@@ -764,9 +777,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Langue(s)</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; <!-- Groupe 2 complet : --> Article;
-                  Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, <!-- Groupe 2 complet : --> Article,
+                  Chapitre de livre / Book chapter </type-bind>
                <input-type value-pairs-name="iso639-3">dropdown</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.language.G1-G2</hint>
                <required/>
@@ -780,11 +793,11 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>true</repeatable>
                <label>Langue(s)</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other;</type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other,</type-bind>
                <input-type value-pairs-name="iso639-3">dropdown</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.language.G3</hint>
                <required/>
@@ -798,9 +811,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Mots-clés</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; <!-- Groupe 2 complet : --> Article;
-                  Chapitre de livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, <!-- Groupe 2 complet : --> Article,
+                  Chapitre de livre / Book chapter </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.subject.G1-G2</hint>
                <required/>
@@ -814,11 +827,11 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>true</repeatable>
                <label>Mots-clés</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dc.subject.G3</hint>
                <required/>
@@ -832,9 +845,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Résumé</label>
                <type-bind>
-                  <!-- Groupe 1 tout sauf revue: --> Livre / Book; Rapport / Report; Actes de
-                  congrès / Conference proceedings; <!-- Groupe 2 complet : --> Article; Chapitre de
-                  livre / Book chapter; </type-bind>
+                  <!-- Groupe 1 tout sauf revue: --> Livre / Book, Rapport / Report, Actes de
+                  congrès / Conference proceedings, <!-- Groupe 2 complet : --> Article, Chapitre de
+                  livre / Book chapter </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.abstract.G1-G2</hint>
                <required/>
@@ -848,11 +861,11 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>true</repeatable>
                <label>Résumé</label>
-               <type-bind> Enregistrement musical / Musical recording; Partition / Musical notation;
-                  Film, vidéo / Motion picture, video; Ensemble de données / Dataset; Logiciel /
-                  Software; Carte géographique / Map; Présentation hors congrès / Non-conference
-                  presentation; Contribution à un congrès / Conference object; Matériel didactique /
-                  Educational material; Autre / Other; </type-bind>
+               <type-bind> Enregistrement musical / Musical recording, Partition / Musical notation,
+                  Film ou vidéo / Motion picture or video, Ensemble de données / Dataset, Logiciel /
+                  Software, Carte géographique / Map, Présentation hors congrès / Non-conference
+                  presentation, Contribution à un congrès / Conference object, Matériel didactique /
+                  Educational material, Autre / Other </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.abstract.G3</hint>
                <required/>
@@ -866,9 +879,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Table des matières</label>
                <type-bind>
-                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings; Revue /
-                  Journal; Livre / Book; Rapport / Report; Matériel didactique / Educational
-                  material; </type-bind>
+                  <!-- Groupe 1 complet : --> Actes de congrès / Conference proceedings, Revue /
+                  Journal, Livre / Book, Rapport / Report, Matériel didactique / Educational
+                  material </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.tableOfContents.G1</hint>
                <required/>
@@ -1137,7 +1150,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>textarea</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.title.G1</hint>
@@ -1153,7 +1166,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe 1 partiel : --> Actes de congrès / Conference proceedings; </type-bind>
+                  <!-- Groupe 1 partiel : --> Actes de congrès / Conference proceedings </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.title.ActesCongres</hint>
                <required>Vous devez inscrire le titre du document.</required>
@@ -1167,9 +1180,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Titre</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Contribution à un congrès / Conference object;
-                  Présentation hors congrès / Non-conference presentation; Film, vidéo / Motion
-                  picture, video; Rapport / Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Contribution à un congrès / Conference object,
+                  Présentation hors congrès / Non-conference presentation, Film ou vidéo / Motion
+                  picture or video, Rapport / Report, Autre / Other </type-bind>
                <input-type>textarea</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.title.Autres</hint>
@@ -1198,10 +1211,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s)</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type value-pairs-name="common_identifiersTravauxetPublicationsTous"
                   >qualdrop_value</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.identifier.Autres</hint>
@@ -1216,7 +1229,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Auteur</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>name</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.contributor.author.G1</hint>
@@ -1231,10 +1244,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Auteur</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>name</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.contributor.author.Autres</hint>
@@ -1249,7 +1262,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Directeur(s) de recherche</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>name</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.contributor.advisor.G1</hint>
@@ -1265,8 +1278,8 @@ Aussi ma note antérieure disait:-->
                <label>Contributeur(s)</label>
                <type-bind>
                   <!-- Groupe "Tous les autres" ajusté: --> Actes de congrès / Conference
-                  proceedings; Contribution à un congrès / Conference object; Rapport / Report;
-                  Autre / Other; </type-bind>
+                  proceedings, Contribution à un congrès / Conference object, Rapport / Report,
+                  Autre / Other </type-bind>
                <input-type>name</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.contributor.Autres</hint>
                <required/>
@@ -1281,8 +1294,8 @@ Aussi ma note antérieure disait:-->
                <label>Éditeur</label>
                <type-bind>
                   <!-- Groupe "Tous les autres" ajusté: --> Actes de congrès / Conference
-                  proceedings; Contribution à un congrès / Conference object; Film, vidéo / Motion
-                  picture, video; Rapport / Report; Autre / Other; </type-bind>
+                  proceedings, Contribution à un congrès / Conference object, Film ou vidéo / Motion
+                  picture or video, Rapport / Report, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.publisher.Autres</hint>
                <required/>
@@ -1296,7 +1309,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Cycle d'études</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type value-pairs-name="2cycles">dropdown</input-type>
 
                <hint>Sélectionnez le cycle d'études auquel vous êtes inscrit.</hint>
@@ -1311,7 +1324,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Programme</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type value-pairs-name="ProductionEtudiante_programme">dropdown</input-type>
 
                <hint>Entrez, s'il y a lieu, le nom du programme d'études dans le cadre duquel a été
@@ -1327,7 +1340,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Date du document</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>date</input-type>
 
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.date.issued.G1</hint>
@@ -1342,10 +1355,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>false</repeatable>
                <label>Date du document</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>date</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.date.issued.Autres</hint>
                <required>Entrez la date du document.</required>
@@ -1371,7 +1384,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Titre du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationTitle.ContributionCongres</hint>
                <required/>
@@ -1384,7 +1397,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Numéro des actes</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationIssue.ContributionCongres</hint>
                <required/>
@@ -1397,7 +1410,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Lieu du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationConferencePlace</hint>
                <required/>
@@ -1410,7 +1423,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Dates du congrès</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationConferenceDate</hint>
                <required/>
@@ -1423,7 +1436,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Page de début</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationStartPage.contributionCongres</hint>
                <required/>
@@ -1436,7 +1449,7 @@ Aussi ma note antérieure disait:-->
                <dc-qualifier/>
                <repeatable>false</repeatable>
                <label>Page de fin</label>
-               <type-bind>Contribution à un congrès / Conference object; </type-bind>
+               <type-bind>Contribution à un congrès / Conference object </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.oaire.citationEndPage.contributionCongres</hint>
                <required/>
@@ -1450,9 +1463,9 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Identifiant(s) du document parent</label>
                <type-bind>
-                  <!-- Groupe Autres : --> Contribution à un congrès / Conference object;
-                  Présentation hors congrès / Non-conference presentation; Film, vidéo / Motion
-                  picture, video; Rapport / Report; Autre / Other; </type-bind>
+                  <!-- Groupe Autres : --> Contribution à un congrès / Conference object,
+                  Présentation hors congrès / Non-conference presentation, Film ou vidéo / Motion
+                  picture or video, Rapport / Report, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.isPartOf.Autres</hint>
                <required/>
@@ -1478,7 +1491,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Mots-clés</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.subject.G1</hint>
             </field>
@@ -1491,10 +1504,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Mots-clés</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dc.subject.G1</hint>
             </field>
@@ -1507,10 +1520,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Résumé(s)</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.abstract.Autres</hint>
             </field>
@@ -1523,7 +1536,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Résumé(s)</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.abstract.G1</hint>
             </field>
@@ -1536,10 +1549,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Autre(s) version(s) linguistique(s)</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.hasVersion</hint>
                <required/>
@@ -1554,10 +1567,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Ensemble(s) de données de recherche lié(s)</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.TravauxetPublications.dcterms.relation</hint>
                <required/>
@@ -1571,7 +1584,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Ensemble(s) de données de recherche lié(s)</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>onebox</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.relation.G1</hint>
                <required/>
@@ -1585,7 +1598,7 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Description du type de document &amp; Note(s) publique(s)</label>
                <type-bind>
-                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work; </type-bind>
+                  <!-- Groupe 1 seul. : --> Travail étudiant / Student work </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.description.G1</hint>
                <required>Veuillez, au minimum, préciser le type de travail selon les exemples
@@ -1600,10 +1613,10 @@ Aussi ma note antérieure disait:-->
                <repeatable>true</repeatable>
                <label>Note(s) publique(s)</label>
                <type-bind>
-                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings;
-                  Contribution à un congrès / Conference object; Présentation hors congrès /
-                  Non-conference presentation; Film, vidéo / Motion picture, video; Rapport /
-                  Report; Autre / Other; </type-bind>
+                  <!-- Groupe "Tous les autres" : --> Actes de congrès / Conference proceedings,
+                  Contribution à un congrès / Conference object, Présentation hors congrès /
+                  Non-conference presentation, Film ou vidéo / Motion picture or video, Rapport /
+                  Report, Autre / Other </type-bind>
                <input-type>textarea</input-type>
                <hint>xmlui.Submission.submit.DescribeStep.hint.ProductionEtudiante.dcterms.description.Autres</hint>
                <required/>
@@ -4992,8 +5005,8 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Film, vidéo, documentaire, court ou long métrage</displayed-value>
-            <stored-value>Film, vidéo / Motion picture, video</stored-value>
+            <displayed-value>Film, vidéo (incluant documentaire, court ou long métrage)</displayed-value>
+            <stored-value>Film ou vidéo / Motion picture or video</stored-value>
          </pair>
          <pair>
             <displayed-value>[Autre]</displayed-value>
@@ -5091,9 +5104,8 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Film, vidéo (incluant documentaire, court ou long
-               métrage)</displayed-value>
-            <stored-value>Film, vidéo / Motion picture, video</stored-value>
+            <displayed-value>Film, vidéo (incluant documentaire, court ou long métrage)</displayed-value>
+            <stored-value>Film ou vidéo / Motion picture or video</stored-value>
          </pair>
 
          <pair>
@@ -5127,7 +5139,6 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
 
 
       </value-pairs>
-      <!-- *********************************************************************************** -->
 
       <!-- *********************************************************************************** -->
 
@@ -5171,9 +5182,8 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
             <stored-value/>
          </pair>
          <pair>
-            <displayed-value>Film, vidéo (incluant documentaire, court ou long
-               métrage)</displayed-value>
-            <stored-value>Film, vidéo / Motion picture, video</stored-value>
+            <displayed-value>Film, vidéo (incluant documentaire, court ou long métrage)</displayed-value>
+            <stored-value>Film ou vidéo / Motion picture or video</stored-value>
          </pair>
          <pair>
             <displayed-value>-----</displayed-value>
@@ -5198,57 +5208,6 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
 
       </value-pairs>
 
-
-      <!-- *********************************************************************************** -->
-      <!-- default language order: (from dspace 1.2.1)
-        "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
-     -->
-      <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
-         <pair>
-            <displayed-value>Sélectionner...</displayed-value>
-            <stored-value/>
-         </pair>
-         <pair>
-            <displayed-value>Français</displayed-value>
-            <stored-value>fr</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Anglais</displayed-value>
-            <stored-value>en</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Espagnol</displayed-value>
-            <stored-value>es</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Italien</displayed-value>
-            <stored-value>it</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Allemand</displayed-value>
-            <stored-value>de</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Portugais</displayed-value>
-            <stored-value>pt</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Grec</displayed-value>
-            <stored-value>el</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>Latin</displayed-value>
-            <stored-value>la</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>[Autre]</displayed-value>
-            <stored-value>other</stored-value>
-         </pair>
-         <pair>
-            <displayed-value>[Sans objet]</displayed-value>
-            <stored-value/>
-         </pair>
-      </value-pairs>
 
 
       <!-- *********************************************************************************** -->
@@ -5297,11 +5256,6 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
             <stored-value>zxx</stored-value>
          </pair>
       </value-pairs>
-
-
-
-
-
 
       <!-- *********************************************************************************** -->
       <value-pairs value-pairs-name="statutUdeM" dc-term="udem_statut">
