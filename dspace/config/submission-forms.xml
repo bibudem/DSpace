@@ -1961,9 +1961,13 @@ Aussi ma note antérieure disait:-->
          </pair>
 
          <pair>
-            <displayed-value>· Sciences de l'éducation - Administration de
-               l'éducation</displayed-value>
+            <displayed-value>· Sciences de l'éducation - Administration de l'éducation</displayed-value>
             <stored-value>Sciences de l'éducation - Administration de l'éducation</stored-value>
+         </pair>
+
+         <pair>
+            <displayed-value>· Sciences de l'éducation - Administration de l'éducation (Doctorat professionnel)</displayed-value>
+            <stored-value>Sciences de l'éducation - Administration de l'éducation (Doctorat professionnel)</stored-value>
          </pair>
 
          <pair>
@@ -1971,8 +1975,7 @@ Aussi ma note antérieure disait:-->
             <stored-value>Sciences de l'éducation - Didactique</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Sciences de l'éducation - Évaluation des
-               compétences</displayed-value>
+            <displayed-value>· Sciences de l'éducation - Évaluation des compétences</displayed-value>
             <stored-value>Sciences de l'éducation - Évaluation des compétences</stored-value>
          </pair>
 
@@ -2027,8 +2030,7 @@ Aussi ma note antérieure disait:-->
             <stored-value>Aménagement (Conservation de l'environnement bâti)</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Aménagement (Montage et gestion de projets
-               d'aménagement)</displayed-value>
+            <displayed-value>· Aménagement (Montage et gestion de projets d'aménagement)</displayed-value>
             <stored-value>Aménagement (Montage et gestion de projets d'aménagement)</stored-value>
          </pair>
          <pair>
@@ -2147,8 +2149,7 @@ Aussi ma note antérieure disait:-->
             <stored-value>Littérature (Littérature comparée et générale)</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Littérature (Théorie et épistémologie de la
-               littérature)</displayed-value>
+            <displayed-value>· Littérature (Théorie et épistémologie de la littérature)</displayed-value>
             <stored-value>Littérature (Théorie et épistémologie de la littérature)</stored-value>
          </pair>
          <pair>
@@ -2272,13 +2273,11 @@ Aussi ma note antérieure disait:-->
             <stored-value>Éducation comparée et fondements de l'éducation</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Sciences de l'éducation - Administration de
-               l'éducation</displayed-value>
+            <displayed-value>· Sciences de l'éducation - Administration de l'éducation</displayed-value>
             <stored-value>Sciences de l'éducation - Administration de l'éducation</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Sciences de l'éducation - Mesure et évaluation en
-               éducation</displayed-value>
+            <displayed-value>· Sciences de l'éducation - Mesure et évaluation en éducation</displayed-value>
             <stored-value>Sciences de l'éducation - Mesure et évaluation en éducation</stored-value>
          </pair>
          <pair>
@@ -2294,8 +2293,7 @@ Aussi ma note antérieure disait:-->
             <stored-value>Sciences de l'éducation - Didactique</stored-value>
          </pair>
          <pair>
-            <displayed-value>· Sciences de l'éducation - Pédagogie universitaire des sciences
-               médicales</displayed-value>
+            <displayed-value>· Sciences de l'éducation - Pédagogie universitaire des sciences médicales</displayed-value>
             <stored-value>Sciences de l'éducation - Pédagogie universitaire des sciences
                médicales</stored-value>
          </pair>
@@ -2997,8 +2995,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Tests de connaissances et mesure psychopédagogique
-               (0288)</displayed-value>
+            <displayed-value>Tests de connaissances et mesure psychopédagogique (0288)</displayed-value>
             <stored-value>Educational tests &amp; measurements / Tests de connaissances et mesure
                psychopédagogique (UMI : 0288)</stored-value>
          </pair>
@@ -4943,8 +4940,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un
-               enregistrement audio/vidéo d'une présentation)</displayed-value>
+            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un enregistrement audio/vidéo d'une présentation)</displayed-value>
             <stored-value>Contribution à un congrès / Conference object</stored-value>
          </pair>
 
@@ -5044,8 +5040,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un
-               enregistrement audio/vidéo d'une présentation)</displayed-value>
+            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un enregistrement audio/vidéo d'une présentation)</displayed-value>
             <stored-value>Contribution à un congrès / Conference object</stored-value>
          </pair>
 
@@ -5131,8 +5126,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
 
 
          <pair>
-            <displayed-value>[Autre] (spécifiez dans le champ « Notes internes » ici
-               bas)</displayed-value>
+            <displayed-value>[Autre] (spécifiez dans le champ « Notes internes » ici bas)</displayed-value>
             <stored-value>Autre / Other</stored-value>
          </pair>
 
@@ -5150,9 +5144,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Travail étudiant (réalisé dans le cadre d'un cours (SAUF thèses et
-               mémoires), par ex. travail dirigé, rapport de stage, essai doctoral,
-               etc.)</displayed-value>
+            <displayed-value>Travail étudiant (réalisé dans le cadre d'un cours (SAUF thèses et mémoires), par ex. travail dirigé, rapport de stage, essai doctoral, etc.)</displayed-value>
             <stored-value>Travail étudiant / Student work</stored-value>
          </pair>
 
@@ -5168,8 +5160,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un
-               enregistrement audio/vidéo d'une présentation)</displayed-value>
+            <displayed-value>Contribution à un congrès (par ex. un article, une affiche, un enregistrement audio/vidéo d'une présentation)</displayed-value>
             <stored-value>Contribution à un congrès / Conference object</stored-value>
          </pair>
 
@@ -5201,8 +5192,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Autre (spécifiez dans le champ "Notes internes" ici
-               bas)</displayed-value>
+            <displayed-value>Autre (spécifiez dans le champ "Notes internes" ici bas)</displayed-value>
             <stored-value>Autre / Other</stored-value>
          </pair>
 
@@ -5282,8 +5272,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>--- UdeM : FACULTÉS, ÉCOLES ET DÉPARTEMENTS
-               -------------------------------------------</displayed-value>
+            <displayed-value>--- UdeM : FACULTÉS, ÉCOLES ET DÉPARTEMENTS -------------------------------------------</displayed-value>
             <stored-value/>
          </pair>
          <pair>
@@ -5292,12 +5281,10 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
          <pair>
             <displayed-value>Faculté de l'aménagement. École d'architecture</displayed-value>
-            <stored-value>Université de Montréal. Faculté de l'aménagement. École
-               d'architecture</stored-value>
+            <stored-value>Université de Montréal. Faculté de l'aménagement. École d'architecture</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de l'aménagement. École d'urbanisme et d'architecture de
-               paysage</displayed-value>
+            <displayed-value>Faculté de l'aménagement. École d'urbanisme et d'architecture de paysage</displayed-value>
             <stored-value>Université de Montréal. Faculté de l'aménagement. École d'urbanisme et
                d'architecture de paysage</stored-value>
          </pair>
@@ -5350,8 +5337,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
                linguistique et de traduction</stored-value>
          </pair>
          <pair>
-            <displayed-value>FAS. Département de littératures et de langues du
-               monde</displayed-value>
+            <displayed-value>FAS. Département de littératures et de langues du monde</displayed-value>
             <stored-value>Université de Montréal. Faculté des arts et des sciences. Département de
                littératures et de langues du monde</stored-value>
          </pair>
@@ -5406,20 +5392,17 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
                d'histoire</stored-value>
          </pair>
          <pair>
-            <displayed-value>FAS. Département d'histoire de l'art et d'études
-               cinématographiques</displayed-value>
+            <displayed-value>FAS. Département d'histoire de l'art et d'études cinématographiques</displayed-value>
             <stored-value>Université de Montréal. Faculté des arts et des sciences. Département
                d'histoire de l'art et d'études cinématographiques</stored-value>
          </pair>
          <pair>
-            <displayed-value>FAS. Département d'informatique et de recherche
-               opérationnelle</displayed-value>
+            <displayed-value>FAS. Département d'informatique et de recherche opérationnelle</displayed-value>
             <stored-value>Université de Montréal. Faculté des arts et des sciences. Département
                d'informatique et de recherche opérationnelle</stored-value>
          </pair>
          <pair>
-            <displayed-value>FAS. École de bibliothéconomie et des sciences de
-               l'information</displayed-value>
+            <displayed-value>FAS. École de bibliothéconomie et des sciences de l'information</displayed-value>
             <stored-value>Université de Montréal. Faculté des arts et des sciences. École de
                bibliothéconomie et des sciences de l'information</stored-value>
          </pair>
@@ -5478,16 +5461,13 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
             <stored-value>Université de Montréal. Faculté de médecine</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département d'anesthésiologie et de médecine de la
-               douleur</displayed-value>
+            <displayed-value>Faculté de médecine. Département d'anesthésiologie et de médecine de la douleur</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département d'anesthésiologie
                et de médecine de la douleur</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de biochimie et médecine
-               moléculaire</displayed-value>
-            <stored-value>Université de Montréal. Faculté de médecine. Département de biochimie et
-               médecine moléculaire</stored-value>
+            <displayed-value>Faculté de médecine. Département de biochimie et médecine moléculaire</displayed-value>
+            <stored-value>Université de Montréal. Faculté de médecine. Département de biochimie et médecine moléculaire</stored-value>
          </pair>
          <pair>
             <displayed-value>Faculté de médecine. Département de chirurgie</displayed-value>
@@ -5496,8 +5476,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
          </pair>
 
          <pair>
-            <displayed-value>Faculté de médecine. Département
-               d'obstétrique-gynécologie</displayed-value>
+            <displayed-value>Faculté de médecine. Département d'obstétrique-gynécologie</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département
                d'obstétrique-gynécologie</stored-value>
          </pair>
@@ -5513,14 +5492,12 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
                médecine</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de médecine de famille et médecine
-               d'urgence</displayed-value>
+            <displayed-value>Faculté de médecine. Département de médecine de famille et médecine d'urgence</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de médecine de
                famille et médecine d'urgence</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de microbiologie, infectiologie et
-               immunologie</displayed-value>
+            <displayed-value>Faculté de médecine. Département de microbiologie, infectiologie et immunologie</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de microbiologie,
                infectiologie et immunologie</stored-value>
          </pair>
@@ -5535,8 +5512,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
                nutrition</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de pathologie et biologie
-               cellulaire</displayed-value>
+            <displayed-value>Faculté de médecine. Département de pathologie et biologie cellulaire</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de pathologie et
                biologie cellulaire</stored-value>
          </pair>
@@ -5546,32 +5522,27 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
                pédiatrie</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de pharmacologie et
-               physiologie</displayed-value>
+            <displayed-value>Faculté de médecine. Département de pharmacologie et physiologie</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de pharmacologie
                et physiologie</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de psychiatrie et
-               d'addictologie</displayed-value>
+            <displayed-value>Faculté de médecine. Département de psychiatrie et d'addictologie</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de psychiatrie et
                d'addictologie</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. Département de radiologie, radio-oncologie et
-               médecine nucléaire</displayed-value>
+            <displayed-value>Faculté de médecine. Département de radiologie, radio-oncologie et médecine nucléaire</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. Département de radiologie,
                radio-oncologie et médecine nucléaire</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. École d'orthophonie et
-               d'audiologie</displayed-value>
+            <displayed-value>Faculté de médecine. École d'orthophonie et d'audiologie</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. École d'orthophonie et
                d'audiologie</stored-value>
          </pair>
          <pair>
-            <displayed-value>Faculté de médecine. École de kinésiologie et des sciences de
-               l'activité physique</displayed-value>
+            <displayed-value>Faculté de médecine. École de kinésiologie et des sciences de l'activité physique</displayed-value>
             <stored-value>Université de Montréal. Faculté de médecine. École de kinésiologie et des
                sciences de l'activité physique</stored-value>
          </pair>
@@ -5656,27 +5627,23 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
             <stored-value>Université de Montréal. École de santé publique</stored-value>
          </pair>
          <pair>
-            <displayed-value>École de santé publique. Département de gestion, d'évaluation et de
-               politique de santé</displayed-value>
+            <displayed-value>École de santé publique. Département de gestion, d'évaluation et de politique de santé</displayed-value>
             <stored-value>Université de Montréal. École de santé publique. Département de gestion,
                d'évaluation et de politique de santé</stored-value>
          </pair>
          <pair>
-            <displayed-value>École de santé publique. Département de médecine sociale et
-               préventive</displayed-value>
+            <displayed-value>École de santé publique. Département de médecine sociale et préventive</displayed-value>
             <stored-value>Université de Montréal. École de santé publique. Département de médecine
                sociale et préventive</stored-value>
          </pair>
          <pair>
-            <displayed-value>École de santé publique. Département de santé environnementale et santé
-               au travail</displayed-value>
+            <displayed-value>École de santé publique. Département de santé environnementale et santé au travail</displayed-value>
             <stored-value>Université de Montréal. École de santé publique. Département de santé
                environnementale et santé au travail</stored-value>
          </pair>
 
          <pair>
-            <displayed-value>--- UdeM : SERVICES
-               ------------------------------------------------------</displayed-value>
+            <displayed-value>--- UdeM : SERVICES ------------------------------------------------------</displayed-value>
             <stored-value/>
          </pair>
 
@@ -5693,8 +5660,7 @@ https://about.proquest.com/globalassets/proquest/files/pdf-files/subject-categor
 
 
          <pair>
-            <displayed-value>--- AUTRES
-               ------------------------------------------------------</displayed-value>
+            <displayed-value>--- AUTRES ------------------------------------------------------</displayed-value>
             <stored-value/>
          </pair>
 
