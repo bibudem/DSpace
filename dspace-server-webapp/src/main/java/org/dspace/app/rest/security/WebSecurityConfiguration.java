@@ -137,6 +137,12 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
             .addFilterBefore(new ShibbolethLoginFilter("/api/authn/shibboleth", authenticationManager(),
                                                        restAuthenticationService),
                              LogoutFilter.class)
+            // add UdeM 2022
+            // Add a filter before our shibboleth endpoints to do the authentication based on the data in the
+            // HTTP request
+            .addFilterBefore(new SamlLoginFilter("/api/authn/saml", authenticationManager(),
+                                                       restAuthenticationService),
+                             LogoutFilter.class)
             //Add a filter before our OIDC endpoints to do the authentication based on the data in the
             // HTTP request
             .addFilterBefore(new OidcLoginFilter("/api/authn/oidc", authenticationManager(),
