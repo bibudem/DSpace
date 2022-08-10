@@ -147,6 +147,10 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
             //Add a filter before our ORCID endpoints to do the authentication based on the data in the
             // HTTP request
             .addFilterBefore(new OrcidLoginFilter("/api/authn/orcid", authenticationManager(),
+            // add UdeM 2022
+            // Add a filter before our shibboleth endpoints to do the authentication based on the data in the
+            // HTTP request
+            .addFilterBefore(new SamlLoginFilter("/api/authn/saml", authenticationManager(),
                                                        restAuthenticationService),
                              LogoutFilter.class)
             //Add a filter before our OIDC endpoints to do the authentication based on the data in the

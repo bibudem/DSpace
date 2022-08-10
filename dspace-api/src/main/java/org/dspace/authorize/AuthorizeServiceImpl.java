@@ -722,6 +722,7 @@ public class AuthorizeServiceImpl implements AuthorizeService {
         myPolicy.setRpDescription(rpDescription);
         myPolicy.setEndDate(endDate);
         myPolicy.setStartDate(startDate);
+        
         resourcePolicyService.update(context, myPolicy);
 
         return myPolicy;
@@ -754,6 +755,16 @@ public class AuthorizeServiceImpl implements AuthorizeService {
         }
         policy.setGroup(group);
         policy.setEPerson(ePerson);
+
+        /* add UdeM 2022: les ajustemets maison pour faire functionner corectement l'affichage des items sous embargo */
+        if (dso instanceof Bundle && embargoDate != null) { 
+            policy.setRpType(ResourcePolicy.TYPE_INHERITED);
+            embargoDate=null;
+        }
+        if (dso instanceof Bitstream && embargoDate != null) { 
+            policy.setRpType(ResourcePolicy.TYPE_INHERITED);
+        }
+        // fin add Udem
 
         if (embargoDate != null) {
             policy.setStartDate(embargoDate);

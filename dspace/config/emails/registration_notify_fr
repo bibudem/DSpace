@@ -1,0 +1,18 @@
+## Registration notification email
+##
+## Parameters: {0} The name of the DSpace instance
+##             {1} The URL of the DSpace instance
+##             {2} Name:
+##             {3} Email:
+##             {4} Registration Date:
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "[papyrus.bib.umontreal.ca] - Inscription d'un.e nouvel.le usager.ère")
+
+Un.e nouvel.le usager.ère s'est inscrit.e dans ${params[0]} (${params[1]}) :
+
+
+Nom :      ${params[2]}
+Courriel : ${params[3]}
+Date :     ${params[4]}

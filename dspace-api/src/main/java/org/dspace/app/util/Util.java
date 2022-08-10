@@ -32,6 +32,9 @@ import org.dspace.core.Constants;
 import org.dspace.core.I18nUtil;
 import org.dspace.core.Utils;
 
+//add UdeM
+import org.apache.commons.lang.StringEscapeUtils;
+
 
 /**
  * Miscellaneous utility methods
@@ -522,4 +525,17 @@ public class Util {
 
         return ListUtils.removeAll(fromFieldName, toFieldName);
     }
+
+/*************************************************************************************/
+/***************************Methodes UdeM 2022****************************************/
+/*************************************************************************************/
+
+public static final String unescapeHTML(String s){
+
+    String stringConvert = StringEscapeUtils.unescapeHtml(s);
+
+    return stringConvert;
+
+}
+
 }

@@ -137,7 +137,7 @@ public class WorkspaceItemMatcher {
 
     /**
      * Check that the id and type are exposed
-     * 
+     *
      * @param witem
      *            the workspaceitem, if null only the presence of the generic properties will be verified
      * @return
@@ -158,7 +158,7 @@ public class WorkspaceItemMatcher {
 
     /**
      * Check that the required links are present
-     * 
+     *
      * @param witem
      *            the workspaceitem
      * @return
