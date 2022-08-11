@@ -49,7 +49,7 @@
 
 
         <!-- Default submission process -->
-        <name-map collection-handle="default" submission-name="TravauxetPublications"/>
+        <name-map collection-handle="default" submission-name="test"/>
 
         <!-- version test -->
         <name-map collection-handle="1973/2964" submission-name="TME" />    <!-- École d'optométrie – Thèses et mémoires (id: 102) -->

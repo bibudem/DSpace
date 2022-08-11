@@ -104,7 +104,6 @@ public class EmbargoServiceImpl implements EmbargoService {
         }
 
         String slift = myLift.toString();
-        
         try {
             context.turnOffAuthorisationSystem();
             itemService.clearMetadata(context, item, lift_schema, lift_element, lift_qualifier, Item.ANY);
@@ -138,11 +137,10 @@ public class EmbargoServiceImpl implements EmbargoService {
         if (result == null) {
             return null;
         }
-       
 
         // new DCDate(non-date String) means toDate() will return null
         Date liftDate = result.toDate();
-        
+
         if (liftDate == null) {
             throw new IllegalArgumentException(
                 "Embargo lift date is uninterpretable:  "
@@ -203,7 +201,7 @@ public class EmbargoServiceImpl implements EmbargoService {
                     "Missing one or more of the required DSpace configuration properties for EmbargoManager, check " +
                         "your configuration file.");
             }
-           
+
             terms_schema = getSchemaOf(terms);
             terms_element = getElementOf(terms);
             terms_qualifier = getQualifierOf(terms);
@@ -254,15 +252,15 @@ public class EmbargoServiceImpl implements EmbargoService {
         }
         return liftDate;
     }
-    
-     /* add UdeM 2022 | Calculer le Left embargo a aprtir du dc.date.issued et selon le choix dans la periode Term */   
+
+     /* add UdeM 2022 | Calculer le Left embargo a aprtir du dc.date.issued et selon le choix dans la periode Term */
     protected  DCDate calculerPeriodeEmbargoUdeM(String valueTermFild, String valuedIssued)  {
 
         // verifier si la date issued est non vide
         if(valuedIssued == null){
             log.info("La date issued ne doit pas etre vide:  " + valuedIssued);
             return null;
-        } 
+        }
 
         DCDate liftDate = null;
 
@@ -270,13 +268,13 @@ public class EmbargoServiceImpl implements EmbargoService {
 
         // verifier si la date issued est bien complet yyyy-MM-dd sinon on complet avec 1 janvier d'année recoupéré
         String[] parts = valuedIssued.split("-");
-         
+
         // Si le format de la date est correct le result de valueTermFild.indexOf("-") = 4, dans le cas contraire on return null
         /*if(valueTermFild.indexOf("-") != 4){
             log.info("La date issued n'a pas un bon format:  " + valuedIssued);
             return null;
         }*/
-        
+
         // si le mois et le jour n'est pas indiqué
         if(parts.length == 1) {
           valuedIssued += "-01-01";
@@ -303,11 +301,11 @@ public class EmbargoServiceImpl implements EmbargoService {
             e.printStackTrace();
             return null;
         }
-        
 
-        //log.info("Date convert: " + cal.getTime());  
 
-        liftDate = new DCDate(cal.getTime());     
+        //log.info("Date convert: " + cal.getTime());
+
+        liftDate = new DCDate(cal.getTime());
 
         return liftDate;
     }
@@ -330,5 +328,5 @@ public class EmbargoServiceImpl implements EmbargoService {
 
 
 
-  
+
 }

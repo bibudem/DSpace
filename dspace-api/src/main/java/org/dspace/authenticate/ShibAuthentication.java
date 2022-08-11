@@ -1280,4 +1280,3 @@ public class ShibAuthentication implements AuthenticationMethod {
         return false;
     }
 }
-

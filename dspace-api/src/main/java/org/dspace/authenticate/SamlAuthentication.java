@@ -24,7 +24,6 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -47,9 +46,6 @@ import org.dspace.eperson.service.EPersonService;
 import org.dspace.eperson.service.GroupService;
 import org.dspace.services.ConfigurationService;
 import org.dspace.services.factory.DSpaceServicesFactory;
-
-// add UdeM
-
 
 /**
  * Saml authentication for DSpace
@@ -1318,4 +1314,3 @@ public class SamlAuthentication implements AuthenticationMethod {
         return false;
     }
 }
-
