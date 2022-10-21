@@ -17,7 +17,6 @@
             </list>
         </property>
     </bean>
-
     <bean id="openAccess" class="org.dspace.submit.model.AccessConditionOption">
         <property name="groupName" value="Anonymous"/>
         <property name="name" value="openaccess"/>
@@ -49,6 +48,7 @@
         <property name="name" value="networkAdministration"/>
         <property name="hasStartDate" value="false"/>
         <property name="hasEndDate" value="false"/>
+
     </bean> -->
 
     <bean id="uploadConfigurationService" class="org.dspace.submit.model.UploadConfigurationService">

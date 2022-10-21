@@ -755,6 +755,16 @@ public class AuthorizeServiceImpl implements AuthorizeService {
         policy.setGroup(group);
         policy.setEPerson(ePerson);
 
+        /* add UdeM 2022: les ajustemets maison pour faire functionner corectement l'affichage des items sous embargo */
+        if (dso instanceof Bundle && embargoDate != null) {
+            policy.setRpType(ResourcePolicy.TYPE_INHERITED);
+            embargoDate=null;
+        }
+        if (dso instanceof Bitstream && embargoDate != null) {
+            policy.setRpType(ResourcePolicy.TYPE_INHERITED);
+        }
+        // fin add Udem
+
         if (embargoDate != null) {
             policy.setStartDate(embargoDate);
         } else {

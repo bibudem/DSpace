@@ -67,8 +67,11 @@
 
     <bean class="org.dspace.profile.OrcidMetadataCopyingAction"/>
 
+<<<<<<< HEAD
     <bean class="org.dspace.handle.hdlresolver.HdlResolverServiceImpl"/>
 
+=======
+>>>>>>> version-7.3/udem-7.3
     <bean class='org.dspace.service.impl.HttpConnectionPoolService'
           id='solrHttpConnectionPoolService'
           scope='singleton'
@@ -102,7 +105,11 @@
     <bean class="org.dspace.eperson.RegistrationDataServiceImpl"/>
     <bean class="org.dspace.eperson.SubscribeServiceImpl"/>
     <bean class="org.dspace.eperson.SupervisorServiceImpl"/>
+<<<<<<< HEAD
     <bean class="org.dspace.eperson.CaptchaServiceImpl"/>
+=======
+
+>>>>>>> version-7.3/udem-7.3
     <bean class="org.dspace.event.EventServiceImpl"/>
 
     <bean class="org.dspace.handle.HandleServiceImpl"/>
@@ -145,8 +152,11 @@
     <bean class="org.dspace.authenticate.OidcAuthenticationBean" id="oidcAuthentication"/>
     <bean class="org.dspace.authenticate.oidc.impl.OidcClientImpl" />
 
+<<<<<<< HEAD
     <bean class="org.dspace.authorize.ValidatePasswordServiceImpl"/>
     <bean class="org.dspace.authorize.RegexPasswordValidator" />
 
+=======
+>>>>>>> version-7.3/udem-7.3
 </beans>
 

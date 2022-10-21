@@ -26,6 +26,15 @@ import org.dspace.embargo.service.EmbargoService;
 import org.dspace.services.ConfigurationService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+// add UdeM 2022
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+import java.util.Calendar;
+
+
 /**
  * Public interface to the embargo subsystem.
  * <p>
@@ -93,6 +102,7 @@ public class EmbargoServiceImpl implements EmbargoService {
                 return;
             }
         }
+
         String slift = myLift.toString();
         try {
             context.turnOffAuthorisationSystem();
@@ -140,6 +150,17 @@ public class EmbargoServiceImpl implements EmbargoService {
          * NOTE: We do not check here for past dates as it can result in errors during AIP restoration.
          * Therefore, UIs should perform any such date validation on input. See DS-3348
          */
+        //UdeM 2022 | ajouter la periode en mois a la date d'aujourd'hui
+        List<MetadataValue> issued = itemService.getMetadata(item,MetadataSchemaEnum.DC.getName(), "date", "issued", Item.ANY);
+
+        String valChamp = terms.get(0).getValue().toString();
+        String valIssued = issued.get(0).getValue().toString();
+
+        //log.info("Champ: " + valChamp);
+        //log.info("Issued: " + valIssued);
+
+        result = calculerPeriodeEmbargoUdeM(valChamp,valIssued);
+
         return result;
     }
 
@@ -179,6 +200,7 @@ public class EmbargoServiceImpl implements EmbargoService {
                     "Missing one or more of the required DSpace configuration properties for EmbargoManager, check " +
                         "your configuration file.");
             }
+
             terms_schema = getSchemaOf(terms);
             terms_element = getElementOf(terms);
             terms_qualifier = getQualifierOf(terms);
@@ -227,6 +249,63 @@ public class EmbargoServiceImpl implements EmbargoService {
                 liftDate = null;
             }
         }
+        return liftDate;
+    }
+
+     /* add UdeM 2022 | Calculer le Left embargo a aprtir du dc.date.issued et selon le choix dans la periode Term */
+    protected  DCDate calculerPeriodeEmbargoUdeM(String valueTermFild, String valuedIssued)  {
+
+        // verifier si la date issued est non vide
+        if(valuedIssued == null){
+            log.info("La date issued ne doit pas etre vide:  " + valuedIssued);
+            return null;
+        }
+
+        DCDate liftDate = null;
+
+        Calendar cal = Calendar.getInstance();
+
+        // verifier si la date issued est bien complet yyyy-MM-dd sinon on complet avec 1 janvier d'année recoupéré
+        String[] parts = valuedIssued.split("-");
+
+        // Si le format de la date est correct le result de valueTermFild.indexOf("-") = 4, dans le cas contraire on return null
+        /*if(valueTermFild.indexOf("-") != 4){
+            log.info("La date issued n'a pas un bon format:  " + valuedIssued);
+            return null;
+        }*/
+
+        // si le mois et le jour n'est pas indiqué
+        if(parts.length == 1) {
+          valuedIssued += "-01-01";
+        }
+        // si le jour n'est pas indiqué
+        if(parts.length == 2) {
+          valuedIssued += "-01";
+        }
+
+        log.info("Date create: " + valuedIssued);
+
+        //Convertir string to date
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        formatter.setTimeZone(TimeZone.getDefault());
+
+       try {
+            Date dateConvert = formatter.parse(valuedIssued);
+            // creation du calendrier a partir de cette date
+            cal.setTime(dateConvert);
+            // on ajout la periode
+            cal.add(Calendar.MONTH, Integer.parseInt(valueTermFild));
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+
+        //log.info("Date convert: " + cal.getTime());
+
+        liftDate = new DCDate(cal.getTime());
+
         return liftDate;
     }
 

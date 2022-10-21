@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- http://www.openarchives.org/OAI/2.0/oai_dc.xsd -->
-<xsl:stylesheet 
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:doc="http://www.lyncode.com/xoai"
-	version="1.0">
+<xsl:stylesheet
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:doc="http://www.lyncode.com/xoai"
+		version="1.0">
 	<xsl:output omit-xml-declaration="yes" method="xml" indent="yes" />
-	
+
 	<xsl:template match="/">
 		<qdc:qualifieddc xmlns:qdc="http://dspace.org/qualifieddc/"
-				xmlns:dc="http://purl.org/dc/elements/1.1/"
-				xmlns:dcterms="http://purl.org/dc/terms/"
-				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd http://dspace.org/qualifieddc/ http://www.ukoln.ac.uk/metadata/dcmi/xmlschema/qualifieddc.xsd">
+						 xmlns:dc="http://purl.org/dc/elements/1.1/"
+						 xmlns:dcterms="http://purl.org/dc/terms/"
+						 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd http://dspace.org/qualifieddc/ http://www.ukoln.ac.uk/metadata/dcmi/xmlschema/qualifieddc.xsd">
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='title']/doc:element/doc:field[@name='value']">
 				<dc:title><xsl:value-of select="." /></dc:title>
 			</xsl:for-each>

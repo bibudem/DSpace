@@ -10,7 +10,6 @@ package org.dspace.app.util;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.dspace.content.Collection;
 import org.dspace.content.factory.ContentServiceFactory;
 import org.dspace.content.service.CollectionService;

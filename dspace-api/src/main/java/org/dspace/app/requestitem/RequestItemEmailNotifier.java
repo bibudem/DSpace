@@ -32,7 +32,8 @@ import org.dspace.handle.factory.HandleServiceFactory;
 import org.dspace.handle.service.HandleService;
 import org.dspace.services.ConfigurationService;
 import org.dspace.services.factory.DSpaceServicesFactory;
-
+//add UdeM 2022
+import org.dspace.app.util.Util;
 /**
  * Send item requests and responses by email.
  *
@@ -83,7 +84,8 @@ public class RequestItemEmailNotifier {
         }
         email.setReplyTo(ri.getReqEmail()); // Requester's address
 
-        email.addArgument(ri.getReqName()); // {0} Requester's name
+        //email.addArgument(ri.getReqName()); // {0} Requester's name | add UdeM 2022, on applique la methode pour remplacer les entites HTML
+         email.addArgument(Util.unescapeHTML(ri.getReqName()));
 
         email.addArgument(ri.getReqEmail()); // {1} Requester's address
 
@@ -94,7 +96,8 @@ public class RequestItemEmailNotifier {
 
         email.addArgument(ri.getItem().getName()); // {4} requested item's title
 
-        email.addArgument(ri.getReqMessage()); // {5} message from requester
+        //email.addArgument(ri.getReqMessage()); // {5} message from requester | add UdeM 2022, on applique la methode pour remplacer les entites HTML
+        email.addArgument(Util.unescapeHTML(ri.getReqMessage()));
 
         email.addArgument(responseLink); // {6} Link back to DSpace for action
 

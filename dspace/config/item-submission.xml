@@ -146,10 +146,10 @@
         <step-definition id="cclicense" mandatory="false">
             <heading>submit.progressbar.CClicense</heading>
             <processing-class>org.dspace.app.rest.submit.step.CCLicenseStep</processing-class>
-	        <type>cclicense</type>
+            <type>cclicense</type>
         </step-definition>
 
-		<!-- This optional step may allow the user to select access conditions on the item -->
+        <!-- This optional step may allow the user to select access conditions on the item -->
         <step-definition id="itemAccessConditions">
             <heading>submit.progressbar.accessCondition</heading>
             <processing-class>org.dspace.app.rest.submit.step.AccessConditionStep</processing-class>

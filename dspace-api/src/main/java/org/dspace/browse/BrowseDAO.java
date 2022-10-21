@@ -346,7 +346,11 @@ public interface BrowseDAO {
     public String getFilterValueField();
 
     /**
+<<<<<<< HEAD
      * Set the name of the field in which the value to constrain results is
+=======
+     * Set he name of the field in which the value to constrain results is
+>>>>>>> version-7.3/udem-7.3
      * contained
      *
      * @param valueField the name of the field

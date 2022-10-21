@@ -39,7 +39,7 @@
         <property name="field" ref="dcJournal"/>
         <property name="key" value="journal" />
     </bean>
-    
+
     <bean id="bibtexAuthorsContrib" class="org.dspace.importer.external.metadatamapping.contributor.SplitMetadataContributor">
         <constructor-arg name="innerContributor">
             <bean class="org.dspace.importer.external.metadatamapping.contributor.SimpleMetadataContributor">

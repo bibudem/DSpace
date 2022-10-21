@@ -1,0 +1,20 @@
+## E-mail sent to DSpace users when new items appear in collections they are
+## subscribed to
+##
+## Parameters: {0} is the details of the new collections and items
+## See org.dspace.core.Email for information on the format of this file.
+##
+#$set($subject = '[papyrus.bib.umontreal.ca] - Nouveauté(s)')
+
+Bonjour!
+
+De nouveaux documents ont été déposés dans des collections du dépôt institutionnel Papyrus de l'Université de Montréal auxquelles vous êtes abonné.e:
+
+${params[0]}
+
+Vous pouvez vous désabonner en tout temps de ces alertes en choisissant cette option à la page « Mon compte » de Papyrus.
+
+Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
+
+L'Équipe Papyrus
+www.bib.umontreal.ca/Papyrus
