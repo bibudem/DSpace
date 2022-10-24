@@ -20,7 +20,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -48,20 +47,20 @@ import org.dspace.services.ConfigurationService;
 import org.dspace.services.factory.DSpaceServicesFactory;
 
 /**
- * Saml authentication for DSpace
+ * Shibboleth authentication for DSpace
  *
- * Saml is a distributed authentication system for securely authenticating
+ * Shibboleth is a distributed authentication system for securely authenticating
  * users and passing attributes about the user from one or more identity
- * providers. In the Saml terminology DSpace is a Service Provider which
+ * providers. In the Shibboleth terminology DSpace is a Service Provider which
  * receives authentication information and then based upon that provides a
- * service to the user. With Saml DSpace will require that you use
+ * service to the user. With Shibboleth DSpace will require that you use
  * Apache installed with the mod_shib module acting as a proxy for all HTTP
  * requests for your servlet container (typically Tomcat). DSpace will receive
  * authentication information from the mod_shib module through HTTP headers.
  *
- * See for more information on installing and configuring a Saml
+ * See for more information on installing and configuring a Shibboleth
  * Service Provider:
- * https://wiki.Saml.net/confluence/display/SHIB2/Installation
+ * https://wiki.shibboleth.net/confluence/display/SHIB2/Installation
  *
  * See the DSpace.cfg or DSpace manual for information on how to configure
  * this authentication module.
@@ -110,24 +109,24 @@ public class SamlAuthentication implements AuthenticationMethod {
      * DSpace supports authentication using NetID, or email address. A user's NetID
      * is a unique identifier from the IdP that identifies a particular user. The
      * NetID can be of almost any form such as a unique integer, string, or with
-     * Saml 2.0 you can use "targeted ids". You will need to coordinate with
-     * your Saml federation or identity provider. There are three ways to
+     * Shibboleth 2.0 you can use "targeted ids". You will need to coordinate with
+     * your Shibboleth federation or identity provider. There are three ways to
      * supply identity information to DSpace:
      *
-     * 1) NetID from Saml Header (best)
+     * 1) NetID from Shibboleth Header (best)
      *
      * The NetID-based method is superior because users may change their email
      * address with the identity provider. When this happens DSpace will not be
      * able to associate their new address with their old account.
      *
-     * 2) Email address from Saml Header (okay)
+     * 2) Email address from Shibboleth Header (okay)
      *
      * In the case where a NetID header is not available or not found DSpace
      * will fall back to identifying a user based-upon their email address.
      *
      * 3) Tomcat's Remote User (worst)
      *
-     * In the event that neither Saml headers are found then as a last
+     * In the event that neither Shibboleth headers are found then as a last
      * resort DSpace will look at Tomcat's remote user field. This is the least
      * attractive option because Tomcat has no way to supply additional
      * attributes about a user. Because of this the autoregister option is not
@@ -137,7 +136,7 @@ public class SamlAuthentication implements AuthenticationMethod {
      *
      * If you are currently using Email based authentication (either 1 or 2) and
      * want to upgrade to NetID based authentication then there is an easy path.
-     * Simply enable Saml to pass the NetID attribute and set the netid-header
+     * Simply enable Shibboleth to pass the NetID attribute and set the netid-header
      * below to the correct value. When a user attempts to log in to DSpace first
      * DSpace will look for an EPerson with the passed NetID, however when this
      * fails DSpace will fall back to email based authentication. Then DSpace will
@@ -151,7 +150,7 @@ public class SamlAuthentication implements AuthenticationMethod {
      * @param username Username (or email address) when method is explicit. Use null
      *                 for implicit method.
      * @param password Password for explicit auth, or null for implicit method.
-     * @param realm    Not used by Saml-based authentication
+     * @param realm    Not used by Shibboleth-based authentication
      * @param request  The HTTP request that started this operation, or null if not
      *                 applicable.
      * @return One of: SUCCESS, BAD_CREDENTIALS, CERT_REQUIRED, NO_SUCH_USER,
@@ -173,12 +172,12 @@ public class SamlAuthentication implements AuthenticationMethod {
 
         // Check if sword compatibility is allowed, and if so see if we can
         // authenticate based upon a username and password. This is really helpful
-        // if your repo uses Saml but you want some accounts to be able use
+        // if your repo uses Shibboleth but you want some accounts to be able use
         // sword. This allows this compatibility without installing the password-based
         // authentication method which has side effects such as allowing users to login
         // with a username and password from the webui.
         boolean swordCompatibility = configurationService
-            .getBooleanProperty("authentication-saml.sword.compatibility", true);
+            .getBooleanProperty("authentication-shibboleth.sword.compatibility", true);
         if (swordCompatibility &&
             username != null && username.length() > 0 &&
             password != null && password.length() > 0) {
@@ -186,7 +185,7 @@ public class SamlAuthentication implements AuthenticationMethod {
         }
 
         if (request == null) {
-            log.warn("Unable to authenticate using Saml because the request object is null.");
+            log.warn("Unable to authenticate using Shibboleth because the request object is null.");
             return BAD_ARGS;
         }
 
@@ -194,9 +193,9 @@ public class SamlAuthentication implements AuthenticationMethod {
         initialize(context);
 
         // Log all headers received if debugging is turned on. This is enormously
-        // helpful when debugging Saml related problems.
+        // helpful when debugging shibboleth related problems.
         if (log.isDebugEnabled()) {
-            log.debug("Starting Saml Authentication");
+            log.debug("Starting Shibboleth Authentication");
 
             String message = "Received the following headers:\n";
             @SuppressWarnings("unchecked")
@@ -214,9 +213,7 @@ public class SamlAuthentication implements AuthenticationMethod {
         }
 
         // Should we auto register new users.
-        boolean autoRegister = configurationService.getBooleanProperty("authentication-saml.autoregister", true);
-
-        log.info( "authenticated methode natalia");
+        boolean autoRegister = configurationService.getBooleanProperty("authentication-shibboleth.autoregister", true);
 
         // Four steps to authenticate a user
         try {
@@ -237,15 +234,15 @@ public class SamlAuthentication implements AuthenticationMethod {
 
             // Step 4: Log the user in.
             context.setCurrentUser(eperson);
-            request.setAttribute("saml.authenticated", true);
+            request.setAttribute("shib.authenticated", true);
             AuthenticateServiceFactory.getInstance().getAuthenticationService().initEPerson(context, request, eperson);
 
-            log.info(eperson.getEmail() + " has been authenticated via Saml.");
+            log.info(eperson.getEmail() + " has been authenticated via shibboleth.");
             return AuthenticationMethod.SUCCESS;
 
         } catch (Throwable t) {
             // Log the error, and undo the authentication before returning a failure.
-            log.error("Unable to successfully authenticate using Saml for user because of an exception.", t);
+            log.error("Unable to successfully authenticate using shibboleth for user because of an exception.", t);
             context.setCurrentUser(null);
             return AuthenticationMethod.NO_SUCH_USER;
         }
@@ -258,7 +255,7 @@ public class SamlAuthentication implements AuthenticationMethod {
      * network-address.
      *
      * DSpace is able to place users into pre-defined groups based upon values
-     * received from Saml. Using this option you can place all faculty members
+     * received from Shibboleth. Using this option you can place all faculty members
      * into a DSpace group when the correct affiliation's attribute is provided.
      * When DSpace does this they are considered 'special groups', these are really
      * groups but the user's membership within these groups is not recorded in the
@@ -266,8 +263,8 @@ public class SamlAuthentication implements AuthenticationMethod {
      * the pre-defined DSpace group, so if the user loses their affiliation then the
      * next time they login they will no longer be in the group.
      *
-     * Depending upon the Saml attributed use in the role-header, it may be
-     * scoped. Scoped is Saml terminology for identifying where an attribute
+     * Depending upon the shibboleth attributed use in the role-header, it may be
+     * scoped. Scoped is shibboleth terminology for identifying where an attribute
      * originated from. For example a students affiliation may be encoded as
      * "student@tamu.edu". The part after the @ sign is the scope, and the preceding
      * value is the value. You may use the whole value or only the value or scope.
@@ -290,31 +287,24 @@ public class SamlAuthentication implements AuthenticationMethod {
     @Override
     public List<Group> getSpecialGroups(Context context, HttpServletRequest request) {
         try {
-            // User has not successfuly authenticated via Saml.
+            // User has not successfuly authenticated via shibboleth.
             if (request == null ||
-                context.getCurrentUser() == null ||
-                request.getSession().getAttribute("saml.authenticated") == null) {
+                context.getCurrentUser() == null) {
                 return Collections.EMPTY_LIST;
             }
 
-            // If we have already calculated the special groups then return them.
-            if (request.getSession().getAttribute("shib.specialgroup") != null) {
+            if (context.getSpecialGroups().size() > 0 ) {
                 log.debug("Returning cached special groups.");
-                List<UUID> sessionGroupIds = (List<UUID>) request.getSession().getAttribute("shib.specialgroup");
-                List<Group> result = new ArrayList<>();
-                for (UUID uuid : sessionGroupIds) {
-                    result.add(groupService.find(context, uuid));
-                }
-                return result;
+                return context.getSpecialGroups();
             }
 
             log.debug("Starting to determine special groups");
-            String[] defaultRoles = configurationService.getArrayProperty("authentication-saml.default-roles");
-            String roleHeader = configurationService.getProperty("authentication-saml.role-header");
+            String[] defaultRoles = configurationService.getArrayProperty("authentication-shibboleth.default-roles");
+            String roleHeader = configurationService.getProperty("authentication-shibboleth.role-header");
             boolean ignoreScope = configurationService
-                .getBooleanProperty("authentication-saml.role-header.ignore-scope", true);
+                .getBooleanProperty("authentication-shibboleth.role-header.ignore-scope", true);
             boolean ignoreValue = configurationService
-                .getBooleanProperty("authentication-saml.role-header.ignore-value", false);
+                .getBooleanProperty("authentication-shibboleth.role-header.ignore-value", false);
 
             if (ignoreScope && ignoreValue) {
                 throw new IllegalStateException(
@@ -331,11 +321,11 @@ public class SamlAuthentication implements AuthenticationMethod {
                     affiliations = Arrays.asList(defaultRoles);
                 }
                 log.debug(
-                    "Failed to find Saml role header, '" + roleHeader + "', falling back to the default roles: " +
+                    "Failed to find Shibboleth role header, '" + roleHeader + "', falling back to the default roles: " +
                         "'" + StringUtils
                         .join(defaultRoles, ",") + "'");
             } else {
-                log.debug("Found Saml role header: '" + roleHeader + "' = '" + affiliations + "'");
+                log.debug("Found Shibboleth role header: '" + roleHeader + "' = '" + affiliations + "'");
             }
 
             // Loop through each affiliation
@@ -359,16 +349,16 @@ public class SamlAuthentication implements AuthenticationMethod {
 
                     // Get the group names
                     String[] groupNames = configurationService
-                        .getArrayProperty("authentication-saml.role." + affiliation);
+                        .getArrayProperty("authentication-shibboleth.role." + affiliation);
                     if (groupNames == null || groupNames.length == 0) {
                         groupNames = configurationService
-                            .getArrayProperty("authentication-saml.role." + affiliation.toLowerCase());
+                            .getArrayProperty("authentication-shibboleth.role." + affiliation.toLowerCase());
                     }
 
                     if (groupNames == null) {
                         log.debug(
                             "Unable to find role mapping for the value, '" + affiliation + "', there should be a " +
-                                "mapping in config/modules/authentication-saml.cfg:  role." + affiliation + " =" +
+                                "mapping in config/modules/authentication-shibboleth.cfg:  role." + affiliation + " =" +
                                 " <some group name>");
                         continue;
                     } else {
@@ -398,16 +388,8 @@ public class SamlAuthentication implements AuthenticationMethod {
 
             log.info("Added current EPerson to special groups: " + groups);
 
-            List<UUID> groupIds = new ArrayList<>();
-            for (Group group : groups) {
-                groupIds.add(group.getID());
-            }
-
-            // Cache the special groups, so we don't have to recalculate them again
-            // for this session.
-            request.setAttribute("shib.specialgroup", groupIds);
-
             return new ArrayList<>(groups);
+
         } catch (Throwable t) {
             log.error("Unable to validate any sepcial groups this user may belong too because of an exception.", t);
             return Collections.EMPTY_LIST;
@@ -458,7 +440,7 @@ public class SamlAuthentication implements AuthenticationMethod {
     public boolean canSelfRegister(Context context, HttpServletRequest request,
                                    String username) throws SQLException {
 
-        // Saml will auto create accounts if configured to do so, but that is not
+        // Shibboleth will auto create accounts if configured to do so, but that is not
         // the same as self register. Self register means that the user can sign up for
         // an account from the web. This is not supported with shibboleth.
         return false;
@@ -502,8 +484,7 @@ public class SamlAuthentication implements AuthenticationMethod {
         // If this server is configured for lazy sessions then use this to
         // login, otherwise default to the protected shibboleth url.
 
-        boolean lazySession = configurationService.getBooleanProperty("authentication-saml.lazysession", false);
-
+        boolean lazySession = configurationService.getBooleanProperty("authentication-shibboleth.lazysession", false);
 
         if ( lazySession ) {
             String shibURL = getShibURL(request);
@@ -520,39 +501,28 @@ public class SamlAuthentication implements AuthenticationMethod {
             // Determine the server return URL, where shib will send the user after authenticating.
             // We need it to trigger DSpace's ShibbolethLoginFilter so we will extract the user's information,
             // locally authenticate them & then redirect back to the UI.
-            String returnURL = configurationService.getProperty("dspace.server.url") + "/api/authn/saml"
-                    + ((redirectUrl != null) ? "?redirectUrl=" + redirectUrl : "");  
-
-            
+            String returnURL = configurationService.getProperty("dspace.server.url") + "/api/authn/shibboleth"
+                    + ((redirectUrl != null) ? "?redirectUrl=" + redirectUrl : "");
 
             try {
-                 shibURL += "?target=" + URLEncoder.encode(returnURL, "UTF-8");
-                 log.info ("info reponse: " + response);
-                
+                shibURL += "?target=" + URLEncoder.encode(returnURL, "UTF-8");
             } catch (UnsupportedEncodingException uee) {
                 log.error("Unable to generate lazysession authentication",uee);
             }
 
             log.debug("Redirecting user to Shibboleth initiator: " + shibURL);
 
-            log.info ("return request: " + request);
-
-            log.info ("info reponse: " + response);
-
-            log.info (response.encodeRedirectURL(shibURL));
-           
             return response.encodeRedirectURL(shibURL);
-
         } else {
             // If we are not using lazy sessions rely on the protected URL.
             return response.encodeRedirectURL(request.getContextPath()
-                    + "/saml-login");
+                    + "/shibboleth-login");
         }
     }
 
     @Override
     public String getName() {
-        return "saml";
+        return "shibboleth";
     }
 
     /**
@@ -560,7 +530,6 @@ public class SamlAuthentication implements AuthenticationMethod {
      * @return true if enabled, false otherwise
      */
     public static boolean isEnabled() {
-
         final String shibPluginName = new SamlAuthentication().getName();
         boolean shibEnabled = false;
         // Loop through all enabled authentication plugins to see if Shibboleth is one of them.
@@ -572,9 +541,6 @@ public class SamlAuthentication implements AuthenticationMethod {
                 break;
             }
         }
-        // debog suivi
-        log.info( "isEnabled methode natalia"+shibEnabled);
-
         return shibEnabled;
     }
 
@@ -610,12 +576,9 @@ public class SamlAuthentication implements AuthenticationMethod {
     protected EPerson findEPerson(Context context, HttpServletRequest request) throws SQLException, AuthorizeException {
 
         boolean isUsingTomcatUser = configurationService
-            .getBooleanProperty("authentication-saml.email-use-tomcat-remote-user");
-        String netidHeader = configurationService.getProperty("authentication-saml.netid-header");
-        String emailHeader = configurationService.getProperty("authentication-saml.email-header");
-
-        //add debog
-        log.info("SAML UdeM: '" + findSingleAttribute(request, netidHeader) );
+            .getBooleanProperty("authentication-shibboleth.email-use-tomcat-remote-user");
+        String netidHeader = configurationService.getProperty("authentication-shibboleth.netid-header");
+        String emailHeader = configurationService.getProperty("authentication-shibboleth.email-header");
 
         EPerson eperson = null;
         boolean foundNetID = false;
@@ -740,10 +703,10 @@ public class SamlAuthentication implements AuthenticationMethod {
         throws SQLException, AuthorizeException {
 
         // Header names
-        String netidHeader = configurationService.getProperty("authentication-saml.netid-header");
-        String emailHeader = configurationService.getProperty("authentication-saml.email-header");
-        String fnameHeader = configurationService.getProperty("authentication-saml.firstname-header");
-        String lnameHeader = configurationService.getProperty("authentication-saml.lastname-header");
+        String netidHeader = configurationService.getProperty("authentication-shibboleth.netid-header");
+        String emailHeader = configurationService.getProperty("authentication-shibboleth.email-header");
+        String fnameHeader = configurationService.getProperty("authentication-shibboleth.firstname-header");
+        String lnameHeader = configurationService.getProperty("authentication-shibboleth.lastname-header");
 
         // Header values
         String netid = findSingleAttribute(request, netidHeader);
@@ -835,10 +798,10 @@ public class SamlAuthentication implements AuthenticationMethod {
         throws SQLException, AuthorizeException {
 
         // Header names & values
-        String netidHeader = configurationService.getProperty("authentication-saml.netid-header");
-        String emailHeader = configurationService.getProperty("authentication-saml.email-header");
-        String fnameHeader = configurationService.getProperty("authentication-saml.firstname-header");
-        String lnameHeader = configurationService.getProperty("authentication-saml.lastname-header");
+        String netidHeader = configurationService.getProperty("authentication-shibboleth.netid-header");
+        String emailHeader = configurationService.getProperty("authentication-shibboleth.email-header");
+        String fnameHeader = configurationService.getProperty("authentication-shibboleth.firstname-header");
+        String lnameHeader = configurationService.getProperty("authentication-shibboleth.lastname-header");
 
         String netid = findSingleAttribute(request, netidHeader);
         String email = findSingleAttribute(request, emailHeader);
@@ -1000,9 +963,9 @@ public class SamlAuthentication implements AuthenticationMethod {
 
         HashMap<String, String> map = new HashMap<>();
 
-        String[] mappingString = configurationService.getArrayProperty("authentication-saml.eperson.metadata");
+        String[] mappingString = configurationService.getArrayProperty("authentication-shibboleth.eperson.metadata");
         boolean autoCreate = configurationService
-            .getBooleanProperty("authentication-saml.eperson.metadata.autocreate", true);
+            .getBooleanProperty("authentication-shibboleth.eperson.metadata.autocreate", true);
 
         // Bail out if not set, returning an empty map.
         if (mappingString == null || mappingString.length == 0) {
@@ -1165,7 +1128,7 @@ public class SamlAuthentication implements AuthenticationMethod {
 
         boolean reconvertAttributes =
             configurationService.getBooleanProperty(
-                "authentication-saml.reconvert.attributes",
+                "authentication-shibboleth.reconvert.attributes",
                 false);
 
         if (!StringUtils.isEmpty(value) && reconvertAttributes) {
@@ -1287,12 +1250,12 @@ public class SamlAuthentication implements AuthenticationMethod {
     }
 
     private String getShibURL(HttpServletRequest request) {
-        String shibURL = configurationService.getProperty("authentication-saml.lazysession.loginurl",
+        String shibURL = configurationService.getProperty("authentication-shibboleth.lazysession.loginurl",
                 "/Shibboleth.sso/Login");
         boolean forceHTTPS =
-                configurationService.getBooleanProperty("authentication-saml.lazysession.secure", true);
+                configurationService.getBooleanProperty("authentication-shibboleth.lazysession.secure", true);
 
-        // Saml url must be absolute
+        // Shibboleth url must be absolute
         if (shibURL.startsWith("/")) {
             String serverUrl = Utils.getBaseUrl(configurationService.getProperty("dspace.server.url"));
             shibURL = serverUrl + shibURL;
@@ -1308,9 +1271,15 @@ public class SamlAuthentication implements AuthenticationMethod {
     public boolean isUsed(final Context context, final HttpServletRequest request) {
         if (request != null &&
                 context.getCurrentUser() != null &&
-                request.getAttribute("saml.authenticated") != null) {
+                request.getAttribute("shib.authenticated") != null) {
             return true;
         }
         return false;
     }
+
+    @Override
+    public boolean canChangePassword(Context context, EPerson ePerson, String currentPassword) {
+        return false;
+    }
 }
+

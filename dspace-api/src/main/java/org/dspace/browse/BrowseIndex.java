@@ -314,17 +314,6 @@ public final class BrowseIndex {
     }
 
     /**
-<<<<<<< HEAD
-=======
-     * @param name The name to set.
-     */
-//  public void setName(String name)
-//  {
-//     this.name = name;
-//  }
-
-    /**
->>>>>>> version-7.3/udem-7.3
      * Get the SortOption associated with this index.
      *
      * @return SortOption
