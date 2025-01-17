@@ -11,12 +11,9 @@ You submitted: ${params[0]}
 
 To collection: ${params[1]}
 
-Your document is now available in Papyrus unless an embargo period applies as it was 
-requested by you or was required because of editor's policy.
-In this particular case, the description of your document
-is displayed online but the document file(s) will only be available
-once the embargo period expires. Submitters can however access their
-embargoed files by first logging in with their Papyrus account.
+Your document is now available in Papyrus unless an embargo period applies as it was requested by you.
+In this particular case, the description of your document is displayed online but the document file(s) 
+will only be available once the embargo period expires.
 
 This is the permanent identifier for your document that you can use from
 now on when citing your submission:
