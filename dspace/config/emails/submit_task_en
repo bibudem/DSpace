@@ -17,7 +17,7 @@ A new document has been submitted:
 
 ${params[3]}
 
-To claim this task, please visit your "My Account > Show > Workflow tasks" page:
+To claim this task, please visit your "My Papyrus > Show > Workflow tasks" page:
 
 ${params[4]}
 
