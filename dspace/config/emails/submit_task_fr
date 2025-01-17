@@ -17,7 +17,7 @@ Un document vient d'être soumis dans Papyrus :
 
 ${params[3]}
 
-Pour accepter cette tâche, accéder à votre page « Mon compte > Afficher > Tâches du Workflow » :
+Pour accepter cette tâche, accéder à votre page « Mon compte > Afficher > Tableau de suivi » :
 
 ${params[4]}
 
