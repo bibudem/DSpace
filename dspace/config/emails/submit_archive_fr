@@ -12,12 +12,9 @@ Vous avez soumis le document : ${params[0]}
 À la collection : ${params[1]}
 
 Votre document est maintenant disponible dans Papyrus, à moins qu'un délai
-de diffusion ne soit appliqué à votre demande ou en raison de la politique
-de l'éditeur. Dans ce cas, la description du document est accessible mais
-le ou les fichiers le seront uniquement au terme de la période d'embargo.
-Les déposants peuvent toutefois avoir accès à leurs fichiers sous embargo
-en se branchant tout d'abord à leur compte Papyrus.
-
+de diffusion ne soit appliqué à votre demande. Dans ce cas, la description
+du document est accessible mais le ou les fichiers le seront uniquement au 
+terme de la période d'embargo.
 
 Voici l'adresse Internet permanente de votre document que vous pouvez
 utiliser à l'avenir pour y faire référence : 
