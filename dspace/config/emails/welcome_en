@@ -2,7 +2,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Welcome!")
+#set($subject = "[umontreal.scholaris.ca] - Welcome!")
 Thank you for registering an account in Papyrus, Université de Montréal’s institutional repository. 
 Your new account can be used immediately to submit new items to the repository, or to subscribe to 
 notices of new content arriving in collections of your choice.
