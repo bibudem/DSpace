@@ -1,5 +1,5 @@
 ## MHV mai 2022 : important: escaper l'apostrophe dans l'objet du courriel
-#set($subject = '[papyrus.bib.umontreal.ca] - Demande de copie d''un document/ Request copy of document')
+#set($subject = '[umontreal.scholaris.ca] - Demande de copie d''un document/ Request copy of document')
 
 [English message below]
 
@@ -19,7 +19,7 @@ Pour toute question concernant cette requête, n'hésitez pas à communiquer ave
 
 
 L'Équipe Papyrus
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca/
 
 ----------------------------------
 
@@ -39,5 +39,5 @@ If you have any questions concerning this request, please contact ${params[10]}.
 
 
 The Papyrus Team
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca/
 
