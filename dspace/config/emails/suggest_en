@@ -10,7 +10,7 @@
 ##             {7} sender message
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - An item of interest in our Institutional Repository')
+#set($subject = '[umontreal.scholaris.ca] - An item of interest in our Institutional Repository')
 
 Hello ${params[0]}:
 
@@ -31,5 +31,5 @@ access to digital material from Université de Montréal researchers, faculty an
 If you need assistance please email <depot@bib.umontreal.ca>.
 
 The Papyrus Team
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
 
