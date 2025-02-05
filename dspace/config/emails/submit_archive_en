@@ -4,7 +4,7 @@
 ## {1}  Name of collection
 ## {2}  handle
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Submission Approved and Available')
+#set($subject = '[umontreal.scholaris.ca] - Submission Approved and Available')
 Hi,
 
 You submitted: ${params[0]}
@@ -24,4 +24,4 @@ now on when citing your submission:
 If you have questions, please email depot@bib.umontreal.ca
 
 The Papyrus Team
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
