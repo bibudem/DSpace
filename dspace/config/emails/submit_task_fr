@@ -6,7 +6,7 @@
 ## {3}  Description of task
 ## {4}  link to 'my DSpace' page
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Nouvelle tâche')
+#set($subject = '[umontreal.scholaris.ca] - Nouvelle tâche')
 Bonjour !
 
 Un document vient d'être soumis dans Papyrus :
@@ -26,4 +26,4 @@ Merci de votre contribution.
 Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
 
 L'Équipe Papyrus
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
