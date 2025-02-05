@@ -10,7 +10,7 @@
 ##             {7} sender message
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Un document susceptible de vous intéresser')
+#set($subject = '[umontreal.scholaris.ca] - Un document susceptible de vous intéresser')
 
 Bonjour ${params[0]},
 
