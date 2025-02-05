@@ -8,7 +8,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Erreur de moissonnage')
+#set($subject = '[umontreal.scholaris.ca] - Erreur de moissonnage')
 Erreur de moissonnage de la collection ${params[0]} :
 
 
