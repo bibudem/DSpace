@@ -4,7 +4,7 @@
 ## Parameters: {0} is the details of the new collections and items
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#$set($subject = '[papyrus.bib.umontreal.ca] - Nouveauté(s)')
+#$set($subject = '[umontreal.scholaris.ca] - Nouveauté(s)')
 
 Bonjour!
 
