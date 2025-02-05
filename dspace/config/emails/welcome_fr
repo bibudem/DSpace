@@ -2,7 +2,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Bienvenue!")
+#set($subject = "[umontreal.scholaris.ca] - Bienvenue!")
 Merci d’avoir rejoint la communauté de Papyrus, le dépôt institutionnel de l’Université de Montréal. 
 Votre nouveau compte peut être utilisé dès maintenant pour soumettre des documents au dépôt ou pour 
 vous abonner à des alertes courriel vous informant de nouveau contenu dans des collections sélectionnées.
