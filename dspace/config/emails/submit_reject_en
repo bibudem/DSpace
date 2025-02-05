@@ -6,7 +6,7 @@
 ## {3}  Reason for the rejection
 ## {4}  Link to 'My DSpace' page
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Non-compliant Submission')
+#set($subject = '[umontreal.scholaris.ca] - Non-compliant Submission')
 Hello!
 
 You submitted: ${params[0]}
@@ -26,4 +26,4 @@ ${params[4]}
 If you need assistance please email depot@bib.umontreal.ca
 
 The Papyrus Team
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
