@@ -6,7 +6,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - L'exportation du document que vous avez demandée n'a pu être complétée")
+#set($subject = "[umontreal.scholaris.ca] - L'exportation du document que vous avez demandée n'a pu être complétée")
 L'exportation du document que vous avez demandée n'a pu être complétée pour la raison suivante :
  ${params[0]}
 
@@ -15,5 +15,5 @@ Pour plus d'informations prière de nous contacter :
 
 
 L'Équipe Papyrus
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
 
