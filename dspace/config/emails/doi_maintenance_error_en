@@ -10,7 +10,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Error ${params[0]} DOI ${params[3]}")
+#set($subject = "[umontreal.scholaris.ca] - Error ${params[0]} DOI ${params[3]}")
 
 Date:    ${params[1]}
 
