@@ -4,7 +4,7 @@
 ## {1}  Name of collection
 ## {2}  handle
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Soumission approuvée et diffusée')
+#set($subject = '[umontreal.scholaris.ca] - Soumission approuvée et diffusée')
 Bonjour,
 
 Vous avez soumis le document : ${params[0]}
@@ -25,4 +25,4 @@ utiliser à l'avenir pour y faire référence :
 Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
 
 L'Équipe Papyrus
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
