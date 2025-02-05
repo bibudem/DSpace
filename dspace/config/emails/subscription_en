@@ -4,7 +4,7 @@
 ## Parameters: {0} is the details of the new collections and items
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#$set($subject = '[papyrus.bib.umontreal.ca] - Subscription')
+#$set($subject = '[umontreal.scholaris.ca] - Subscription')
 New items in Papyrus, the institutionnal repository for Université de Montréal, are available in the collection(s) you have subscribed to:
 
 ${params[0]}
