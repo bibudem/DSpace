@@ -8,7 +8,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Inscription d'un.e nouvel.le usager.ère")
+#set($subject = "[umontreal.scholaris.ca] - Inscription d'un.e nouvel.le usager.ère")
 
 Un.e nouvel.le usager.ère s'est inscrit.e dans ${params[0]} (${params[1]}) :
 
