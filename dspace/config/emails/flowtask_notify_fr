@@ -7,7 +7,7 @@
 ## {4}  Task result
 ## {5}  Workflow action taken
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Rapport de tâche(s) de conservation')
+#set($subject = '[umontreal.scholaris.ca] - Rapport de tâche(s) de conservation')
 
 Titre :         ${params[0]}
 Collection :    ${params[1]}
