@@ -10,7 +10,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Internal Server Error')
+#set($subject = '[umontreal.scholaris.ca] - Internal Server Error')
 An internal server error occurred on ${params[0]}:
 
 Date:       ${params[1]}
