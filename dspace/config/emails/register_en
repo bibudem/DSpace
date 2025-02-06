@@ -4,7 +4,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Account Registration")
+#set($subject = "[umontreal.scholaris.ca] - Account Registration")
 To complete registration for a Papyrus account, please click the link
 below:
 
@@ -14,5 +14,5 @@ If you need assistance with your account, please email
 depot@bib.umontreal.ca
 
 The Papyrus Team
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
 
