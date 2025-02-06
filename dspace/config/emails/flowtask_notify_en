@@ -7,7 +7,7 @@
 ## {4}  Task result
 ## {5}  Workflow action taken
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Curation Task Report')
+#set($subject = '[umontreal.scholaris.ca] - Curation Task Report')
 
 Title:         ${params[0]}
 Collection:    ${params[1]}
