@@ -10,7 +10,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Feedback Form Information')
+#set($subject = '[umontreal.scholaris.ca] - Feedback Form Information')
 
 Comments:
 
