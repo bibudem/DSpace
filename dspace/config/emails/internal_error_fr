@@ -10,7 +10,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = '[papyrus.bib.umontreal.ca] - Erreur système')
+#set($subject = '[umontreal.scholaris.ca] - Erreur système')
 Une erreur système est survenue à ${params[0]} :
 
 Date:        ${params[1]}
