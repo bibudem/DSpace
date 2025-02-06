@@ -4,7 +4,7 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Inscription")
+#set($subject = "[umontreal.scholaris.ca] - Inscription")
 Pour compléter votre inscription au dépôt institutionnel Papyrus, veuillez accéder
 au lien ci-dessous :
 
@@ -14,4 +14,4 @@ Pour toute question concernant le dépôt, n'hésitez pas à communiquer
 avec nous à depot@bib.umontreal.ca
 
 L'Équipe Papyrus
-www.bib.umontreal.ca/Papyrus
+https://umontreal.scholaris.ca
