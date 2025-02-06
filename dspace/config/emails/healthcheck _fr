@@ -3,7 +3,7 @@
 ## Parameters: {0} is the output of healthcheck command
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = "[papyrus.bib.umontreal.ca] - Contrôle sanitaire du dépôt")
+#set($subject = "[umontreal.scholaris.ca] - Contrôle sanitaire du dépôt")
 Le "contrôle sanitaire" s'est terminé avec le résultat suivant :
 
 ${params[0]}
