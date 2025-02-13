@@ -6,14 +6,14 @@
 ##
 ## See org.dspace.core.Email for information on the format of this file.
 ##
-#set($subject = 'DSpace - The batch import was not completed.')
-The batch import you initiated from the DSpace UI was not completed, due to the following reason:
+#set($subject = 'DSpace - L'importation en lot n'a pas été terminée.')
+L'importation en lot que vous avez lancée à partir de l'interface utilisateur DSpace n'a pas été terminée pour la raison suivante :
  ${params[0]}
 
-For more information you may contact your system administrator:
+Pour plus d'informations, vous pouvez contacter votre administrateur système :
  ${params[1]}
 
 
 
-The DSpace Team
+L'équipe Papyrus
 
