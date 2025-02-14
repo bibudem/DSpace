@@ -11,6 +11,7 @@
 Cher/Chère ${params[0]} :
 
 Votre demande de copie du/des fichier(s) du document ci-dessous a été approuvée par ${params[3]}. Vous trouverez le/les fichier(s) demandé(s) en pièce jointe.
+Cette copie doit être utilisée uniquement à des fins personnelles d'étude et de recherche.
 
     ${params[2]}
     ${params[1]} 
