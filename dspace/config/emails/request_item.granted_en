@@ -12,6 +12,7 @@
 Dear ${params[0]}:
 
 Your request for a copy of the file(s) from the below document has been approved by ${params[3]}.  You may find the requested file(s) attached.
+This copy is to be used for personal study and research purposes only.
 
     ${params[2]}
     ${params[1]} 
