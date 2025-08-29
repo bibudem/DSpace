@@ -24,9 +24,6 @@ utiliser à l'avenir pour y faire référence :
 
   ${params[2]}
 
-Papyrus attribuera aussi automatiquement un DOI aux thèses, mémoires et travaux étudiants 
-ainsi qu'à tous les documents qui n'ont pas déjà un DOI sur une autre plateforme (ex. le DOI de l’éditeur d’un article publié). 
-Le cas échéant, vous pourrez voir le DOI de votre document dans le champ URI de sa description, dans un délai maximal de 24h.
 
 Pour toute question concernant le dépôt, n'hésitez pas à communiquer avec nous à depot@bib.umontreal.ca
 
