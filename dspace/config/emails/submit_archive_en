@@ -23,9 +23,6 @@ now on when citing your submission:
 
   ${params[2]}
 
-Papyrus will also automatically assign a DOI to theses, dissertations, and student papers, 
-as well as to all documents that do not already have a DOI on another platform (e.g., the DOI of the publisher of a published article). 
-If applicable, you will be able to see the DOI of your document in the URI field of its description, within 24 hours.
 
 If you have questions, please email depot@bib.umontreal.ca
 
